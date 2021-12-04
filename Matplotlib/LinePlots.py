@@ -18,9 +18,12 @@ fig, ax = plt.subplots()
 #or like this!! (preferred method)
 line, line2 = ax.plot(t, s, t, s + 0.15)
 
+# here are some cool controls you can have
 ax.set_ylabel("test")
 ax.set_xlabel("test2")
 ax.set_title("another title")
+ax.set_xlim(0, 1) #set bounds
+ax.set_ylim(0, 5)
 line.set_color("teal") #example of how you use line
 
 plt.legend([line, line2], ["line", "line 2"])
