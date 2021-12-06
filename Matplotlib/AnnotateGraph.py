@@ -7,7 +7,8 @@ t = np.arange(0.0, 5.0, 0.01)
 s = np.cos(2*np.pi*t)
 line, = ax.plot(t, s, lw=2)
 ax.set_ylim(-2, 2)
-
+ax.axhline(y=0.5, color='r', linestyle='--') #horizontal line
+ax.axvline(x=0.5, color='r', linestyle='--') #vertical line
 #here we exercise all different sorts of annotation powers
 
 ax.text(3, 1.5, r"$\sigma \sum_{x = 0}^\infty f(x)$  test")
