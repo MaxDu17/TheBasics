@@ -16,7 +16,7 @@ ax.text(3, 1.5, r"$\sigma \sum_{x = 0}^\infty f(x)$  test")
 ax.annotate('test', xy=(2, 1), xytext=(2, 1.5),
              arrowprops=dict(facecolor='black', shrink=0.05),
              )
-ax.grid()
+ax.grid() #use plt.grid() if the grids don't show up
 ax.legend([line], ["line_name"])
 ax.set_ylabel("test")
 ax.set_xlabel("test2")

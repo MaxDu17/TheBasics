@@ -14,6 +14,8 @@ df.iloc[:, 2] = np.array([5] * len(df))
 #showing dataframe after modifications
 print(f"after modifications: \n{df}")
 
+print(f"after dropping a column:\n {df.drop('label1', axis = 'columns')}")
+
 #now, to demonstrate recovery from missing data
 #this code will make a copy of the dataframe with one extra column
 df1 = df.reindex(index=list(df.index), columns = list(df.columns) + ["test"])
