@@ -1,0 +1,56 @@
+\documentclass[12pt]{report}
+%article: for journals, documentations, short writing
+%proc: for proceedings (rarer)
+%report: longer report (allows chapters)
+%book: for real books
+%memoir: for real books with free reign over the style 
+%letter: for writing letters
+%beamer: for presentations 
+
+\usepackage{lipsum} %used for demonstration purposes 
+%THIS SECTION IS KNOWN AS THE PREAMBLE
+\title{This is a title}
+\author{Maximilian Du}
+\date{May 2021}
+%END PREAMBLE
+
+\begin{document}
+\pagenumbering{arabic} %roman, arabic, gobble (removes)
+
+\maketitle
+
+\tableofcontents %constructs table of contents 
+
+\part{Hi i'm a part}
+This is a part. Parts allow you to organize larger thoughts. Note how a part's text is separated from the cover page. I'm going to add some lipsum to fill up space 
+
+\lipsum[1]
+
+\chapter{Hi i'm a chapter}
+This is a chapter. Note how chapters fill up less space. 
+
+Chapters and parts are only available in report and book classes 
+
+\lipsum[1]
+
+\section{Hi I'm a section}
+This section allows you to organize ideas inside a chapter 
+
+\lipsum[1]
+
+\subsection{Hi I'm a subsection}
+\lipsum[1]
+
+\subsubsection{Subsubsection here}
+\lipsum[1]
+
+\paragraph{Paragraph here}
+\lipsum[1]
+
+
+\subparagraph{Subparagraph here}
+\lipsum[1]
+
+And that's as small as it gets 
+
+\end{document}

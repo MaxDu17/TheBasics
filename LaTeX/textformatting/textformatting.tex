@@ -1,0 +1,100 @@
+\documentclass[12pt]{report}
+\title{How to organize text and chunks of text}
+\begin{document}
+\maketitle
+
+\chapter{Text}
+\section{Text types}
+\textbf{Hello, I'm bold text}
+
+\textit{Hello, I'm italic text}
+
+\underline{Hello, I'm underline text}
+
+\texttt{Hello I'm teletype text}
+
+\textsc{Hello I'm small caps text}
+
+\textsl{Hello I'm slanted text}
+
+\textrm{Hello I'm roman text (good for math)}
+
+\textsf{Hello I'm sans serif}
+
+\section{Switches}
+Switches are a way of turning a huge block of text into one format instead of wrapping everything into one curly bracket pair. We reset the effect of the switch by using something like "normalfont" or using curly brackets (see next section)
+
+\bfseries
+bold 
+\normalfont 
+
+\mdseries
+Medium weight (default format)
+\normalfont 
+
+\rmfamily
+roman
+\normalfont 
+
+\ttfamily 
+Teletype 
+\normalfont 
+
+\upshape 
+Upright (non-italic, default)
+\normalfont 
+
+\slshape 
+Slanted shape 
+\normalfont
+
+\scshape
+Small caps shape
+\normalfont 
+
+ Switches can also be composed, as shown below: 
+
+\bfseries \slshape 
+bold italic 
+\normalfont 
+
+\section{Text Sizes}
+Text size commands can be used as both switches and environments as they are overloaded. If you use them with the curly brackets and the "begin" and "end" key words, they are commands. Else, they are switches. Below, we use switches for conveneience but we also show one example of an environment 
+
+\tiny Tiny text 
+
+\scriptsize Script Size 
+
+\footnotesize Footnote size 
+
+\small Small text 
+
+\normalsize Normal text 
+
+\large medium text 
+
+\Large large text 
+
+\LARGE very large text 
+
+\huge huge text
+
+
+\normalsize 
+
+\begin{tiny}
+this is a tiny text environment 
+\end{tiny}
+
+{\huge switches are also confined in curly brackets}
+
+For arbitrary font sizes, we use a pretty weird format. Try not to use if not needed. The first argument is the text size, and the second one is the baseline skip. We also need to use a different that can go up to a certain size 
+
+{\fontsize{50}{55}\selectfont \fontfamily{ppl}\selectfont This text is in size 50}
+
+\chapter{Organizing Text}
+
+\chapter{Paragraph formatting}
+
+Include how to make dividers, centering, etc
+\end{document}
