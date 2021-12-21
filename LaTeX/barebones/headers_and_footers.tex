@@ -1,0 +1,23 @@
+\documentclass[12pt]{report}
+\pagestyle{headings} %empty (no header / footer), plain (just numbers), headings (chapter info)
+\begin{document}
+\pagenumbering{arabic} %roman, arabic, gobble (removes)
+%\pagestyle OVERRIDES \pagenumbering 
+asdfa
+
+Add your text here 
+
+\pagebreak 
+\thispagestyle{empty}
+
+this page has no header or footer 
+
+\pagebreak 
+%back to "plain" 
+\pagenumbering{roman} %these are switches! We start counting from 1 though 
+\chapter{test chapter}
+this page has numerical footer in roman style 
+
+\pagebreak 
+and we start again 
+\end{document}

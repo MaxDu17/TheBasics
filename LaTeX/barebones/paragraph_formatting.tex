@@ -1,0 +1,34 @@
+\documentclass[12pt]{report}
+\begin{document}
+
+\chapter{Paragraph formatting}
+\setlength{\parindent}{10ex} %this is how to set paragraph indentation 
+\setlength{\parskip}{1em} %this is how to set space between paragraphs 
+
+%to change the line spacing, this command must be placed BEFORE the document is begun 
+% \renewcommand{\baselinestretch}{1.6} %this is spacing
+%1.0 is single spacing, 1.3 is one and a half, and 1.6 is double spaced
+
+This is one paragraph
+
+To do a paragraph break, add a blank line. You can also use "par"\par 
+To break a paragraph.\\ 
+Two slashes will force end a line, but it does NOT make a paragraph 
+
+\indent \indent You can artificially force an indent 
+
+this quick brownfox jumped over the lazy dogs, hwho in a fit of metaphysical glory, decided to walk around the room like a bunch of bears sucking on dry apples. 
+
+\begin{center}
+Hello, this is centered text. However, this is not the only way to make centered text
+\end{center}
+
+\begin{flushleft}
+this is left-justified text the quick brown fox jumped over the lazy dogs 
+\end{flushleft}
+
+\begin{flushright}
+this is right-justified test the quick brown fox jumped over the lazy dogs 
+\end{flushright}
+
+\end{document}

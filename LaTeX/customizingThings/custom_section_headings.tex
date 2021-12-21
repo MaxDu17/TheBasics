@@ -1,0 +1,27 @@
+\documentclass[12pt]{report}
+
+\usepackage{titlesec}
+%this is how you can change the formatting of a section. Below, we change what a title looks like 
+\titleformat
+{\chapter} % command. Can be section, part, etc 
+[display] % shape. can be hang, block, display, running, left margin, right margin, drop, wrap, frame 
+{\bfseries\Large\itshape} % format
+{Label here with number: \ \thechapter} % label
+{0.5ex} % sep
+{% before-code
+    \rule{\textwidth}{1pt} %horizontal line 
+    \vspace{1ex} %space 
+    \centering %centers text provided by the {} in the \chapter command 
+} 
+[% after-code
+\vspace{-0.5ex}%smushes a little bit 
+\rule{\textwidth}{0.3pt} %horizontal line 
+] 
+
+\begin{document}
+\chapter{Chapter Name}
+This is a chapter with different formatting 
+
+
+
+\end{document}
