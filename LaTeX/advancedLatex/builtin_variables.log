@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.12.7)  20 DEC 2021 21:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.12.7)  20 DEC 2021 23:03
 entering extended mode
-**"c:/Users/Black/Desktop/Github Repos/TheBasics/LaTeX/barebones/headers_and_footers.tex"
-("c:/Users/Black/Desktop/Github Repos/TheBasics/LaTeX/barebones/headers_and_footers.tex"
+**"c:/Users/Black/Desktop/Github Repos/TheBasics/LaTeX/advancedLatex/builtin_variables.tex"
+("c:/Users/Black/Desktop/Github Repos/TheBasics/LaTeX/advancedLatex/builtin_variables.tex"
 LaTeX2e <2020-10-01> patch level 2
 L3 programming layer <2020-12-03> xparse <2020-03-03> ("C:\Program Files\MiKTeX\tex/latex/base\report.cls"
 Document Class: report 2020/04/10 v1.4m Standard LaTeX document class
@@ -24,8 +24,8 @@ File: size12.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
 File: l3backend-pdftex.def 2020-09-24 L3 backend support: PDF output (pdfTeX)
 \l__kernel_color_stack_int=\count186
 \l__pdf_internal_box=\box47
-) ("c:/Users\Black\Desktop\Github Repos\TheBasics\LaTeX\barebones\headers_and_footers.aux")
-\openout1 = `headers_and_footers.aux'.
+) ("c:/Users\Black\Desktop\Github Repos\TheBasics\LaTeX\advancedLatex\builtin_variables.aux")
+\openout1 = `builtin_variables.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
 LaTeX Font Info:    ... okay on input line 3.
@@ -41,25 +41,29 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 3.
 LaTeX Font Info:    ... okay on input line 3.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 3.
 LaTeX Font Info:    ... okay on input line 3.
- [1{C:/Users/Black/AppData/Local/MiKTeX/pdftex/config/pdftex.map}
+ [1
 
-] [2]
+{C:/Users/Black/AppData/Local/MiKTeX/pdftex/config/pdftex.map}]
 Chapter 1.
-[1
+[2
 
-] [2] ("c:/Users\Black\Desktop\Github Repos\TheBasics\LaTeX\barebones\headers_and_footers.aux") ) 
+]
+Chapter 2.
+[3
+
+] ("c:/Users\Black\Desktop\Github Repos\TheBasics\LaTeX\advancedLatex\builtin_variables.aux") ) 
 Here is how much of TeX's memory you used:
  413 strings out of 479697
- 7833 string characters out of 2877009
- 271928 words of memory out of 3000000
- 17584 multiletter control sequences out of 15000+200000
- 404686 words of font info for 31 fonts, out of 3000000 for 9000
+ 7865 string characters out of 2877009
+ 272898 words of memory out of 3000000
+ 17585 multiletter control sequences out of 15000+200000
+ 404940 words of font info for 32 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 43i,4n,49p,248b,135s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsl12.pfb>
-Output written on "c:/Users\Black\Desktop\Github Repos\TheBasics\LaTeX\barebones\headers_and_footers.pdf" (4 pages, 33700 bytes).
+ 43i,4n,49p,262b,106s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb>
+Output written on "c:/Users\Black\Desktop\Github Repos\TheBasics\LaTeX\advancedLatex\builtin_variables.pdf" (3 pages, 25781 bytes).
 PDF statistics:
- 27 PDF objects out of 1000 (max. 8388607)
+ 20 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

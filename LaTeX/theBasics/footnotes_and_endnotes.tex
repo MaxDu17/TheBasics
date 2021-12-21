@@ -1,0 +1,40 @@
+%unresolved issues: how to make the chapter reference the current chapter? How to reset the enotez after each printout? 
+
+\documentclass[12pt]{report}
+\usepackage[bottom]{footmisc}%this makes footnotes that stick to the bottom of the page
+%use "symbol*" to get symbolic footnotes 
+
+%endnote stuff. It's quite involved at times 
+\usepackage{enotez} %for endnotes. There's a ton of stuff you can do with this!
+%see the manual: https://ctan.math.utah.edu/ctan/tex-archive/macros/latex/contrib/enotez/enotez_en.pdf
+
+\DeclareInstance{enotez-list}{section}{paragraph}{heading=\chapter*{Big heading}}
+\setenotez{reset = true, list-style=section,split=chapter,split-title=Chapter \thechapter  notes!,counter-format=arabic}
+%reset every chapter. The endnotes will be under a "section" 
+%see this post https://tex.stackexchange.com/questions/255520/enotez-package-how-to-format-split-section-headings
+
+\AtEveryEndnotesList{This text goes before every endnotes list (you can have more than one)}
+% \AtEveryListSplit{Text before every split}
+
+
+\begin{document}
+\chapter{This is one chapter}
+This\footnote{this is a footnote} and that. This is\footnote[23]{Another footnote with a forced number}. What about a rainy day?\footnotemark. I don't know. 
+
+\footnotetext{I made the footnote text later!}
+
+And here is how we make an endnote\endnote{Testing} and \endnotemark 
+
+\endnotetext{here}
+
+
+\chapter{This is another chapter}
+More text goes here\endnote{Endnote from another chapter}
+\printendnotes
+
+
+\chapter{Another chapter for demo}
+Here's an endnote after we print it once\endnote{Again!}
+
+\printendnotes
+\end{document}

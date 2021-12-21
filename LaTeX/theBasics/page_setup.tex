@@ -1,0 +1,34 @@
+\documentclass[12pt]{report}
+
+%geometry package is very convenient. See https://www.overleaf.com/learn/latex/Page_size_and_margins for more on paper formatting 
+% \usepackage[letterpaper, portrait, total={6in, 8in}]{geometry}
+% \usepackage[letterpaper, portrait, margin=1in]{geometry}
+
+\usepackage{lipsum}
+\usepackage{lscape}
+\usepackage{color}
+
+\usepackage{multicol}
+\setlength{\columnsep}{10pt} %to customize the column separation. You can keep it default if you want 
+%these two will put a vertical column separator 
+\setlength{\columnseprule}{1pt}
+\def\columnseprulecolor{\color{blue}}
+
+\begin{document}
+\lipsum[2-10]
+\pagebreak 
+
+\begin{multicols}{2}[\textbf{This is the header to a multicolumn}]
+%if you don't want balanced columns, use "multicols*" 
+\lipsum[2-10]
+
+\end{multicols}
+
+
+\begin{landscape} %just in case 
+\lipsum[2]
+\end{landscape}
+
+
+
+\end{document}

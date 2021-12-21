@@ -1,19 +1,33 @@
 \documentclass[12pt, twoside]{report} %two side means it gives a wider margin for the binding
 
 \usepackage{fancyhdr}
+\usepackage{lipsum}
 \pagestyle{fancy} %enables the package (it's basically a plug-in for the generic header-footer paradigm)
+
 \fancyhf{} %erase current pagestyle
-%The LE means left even, and the RO means right odd. C means center. 
+%The LE means left even, and the RO means right odd. C means center.
+
+
 \fancyhead[LE,RO]{Facing binding}
 \fancyhead[RE,LO]{Away from binding }
-\fancyfoot[CE,CO]{Bottom Center}
-\fancyfoot[LE,RO]{Facing binding}
+\fancyfoot[CE,CO]{\leftmark} %leftmark for chapter 
+\fancyfoot[LE,RO]{\rightmark} %rightmark for section 
 
+\renewcommand{\headrulewidth}{1pt} %the lines. Set to 0 for invisible
+\renewcommand{\footrulewidth}{1pt}
+\setlength{\headheight}{15pt} %distance from the top 
+
+%leftmark and rightmark call chaptermark and section mark respectively, so it is suficient to change these commands 
+\renewcommand{\chaptermark}[1]{ \markboth{#1}{} } %changes how the leftmark and right mark work 
+\renewcommand{\sectionmark}[1]{ \markright{#1}{} }
 
 \begin{document}
-asdfasdf asdf asdf  
 
-\pagebreak 
 
-asdfasdf asdf asdf asdf 
+\chapter{This is the chapter title}
+\lipsum[1]
+
+\section{This is a section title}
+\lipsum[2-6]
+
 \end{document}
