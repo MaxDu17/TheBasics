@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.12.7)  20 DEC 2021 23:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.12.7)  22 DEC 2021 19:52
 entering extended mode
-**"c:/Users/Black/Desktop/Github Repos/TheBasics/LaTeX/barebones/page_setup.tex"
-("c:/Users/Black/Desktop/Github Repos/TheBasics/LaTeX/barebones/page_setup.tex"
+**"c:/Users/Black/Desktop/Github Repos/TheBasics/LaTeX/theBasics/page_setup.tex"
+("c:/Users/Black/Desktop/Github Repos/TheBasics/LaTeX/theBasics/page_setup.tex"
 LaTeX2e <2020-10-01> patch level 2
 L3 programming layer <2020-12-03> xparse <2020-03-03> ("C:\Program Files\MiKTeX\tex/latex/base\report.cls"
 Document Class: report 2020/04/10 v1.4m Standard LaTeX document class
@@ -20,11 +20,33 @@ File: size12.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
 \bibindent=\dimen138
-) ("C:\Program Files\MiKTeX\tex/latex/lipsum\lipsum.sty" ("C:\Program Files\MiKTeX\tex/latex/l3kernel\expl3.sty"
+) ("C:\Program Files\MiKTeX\tex/latex/geometry\geometry.sty"
+Package: geometry 2020/01/02 v5.9 Page Geometry
+ ("C:\Program Files\MiKTeX\tex/latex/graphics\keyval.sty"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks15
+) ("C:\Program Files\MiKTeX\tex/generic/iftex\ifvtex.sty"
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+ ("C:\Program Files\MiKTeX\tex/generic/iftex\iftex.sty"
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+))
+\Gm@cnth=\count186
+\Gm@cntv=\count187
+\c@Gm@tempcnt=\count188
+\Gm@bindingoffset=\dimen139
+\Gm@wd@mp=\dimen140
+\Gm@odd@mp=\dimen141
+\Gm@even@mp=\dimen142
+\Gm@layoutwidth=\dimen143
+\Gm@layoutheight=\dimen144
+\Gm@layouthoffset=\dimen145
+\Gm@layoutvoffset=\dimen146
+\Gm@dimlist=\toks16
+ ("C:\Program Files\MiKTeX\tex/latex/geometry\geometry.cfg")) ("C:\Program Files\MiKTeX\tex/latex/lipsum\lipsum.sty" ("C:\Program Files\MiKTeX\tex/latex/l3kernel\expl3.sty"
 Package: expl3 2020-12-03 L3 programming layer (loader) 
  ("C:\Program Files\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def"
 File: l3backend-pdftex.def 2020-09-24 L3 backend support: PDF output (pdfTeX)
-\l__kernel_color_stack_int=\count186
+\l__kernel_color_stack_int=\count189
 \l__pdf_internal_box=\box47
 )) ("C:\Program Files\MiKTeX\tex/latex/l3packages/xparse\xparse.sty"
 Package: xparse 2020-10-27 L3 Experimental document command parser
@@ -52,23 +74,23 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 Package color Info: Driver file: pdftex.def on input line 147.
 ) ("C:\Program Files\MiKTeX\tex/latex/tools\multicol.sty"
 Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
-\c@tracingmulticols=\count187
+\c@tracingmulticols=\count190
 \mult@box=\box48
-\multicol@leftmargin=\dimen139
-\c@unbalance=\count188
-\c@collectmore=\count189
-\doublecol@number=\count190
-\multicoltolerance=\count191
-\multicolpretolerance=\count192
-\full@width=\dimen140
-\page@free=\dimen141
-\premulticols=\dimen142
-\postmulticols=\dimen143
+\multicol@leftmargin=\dimen147
+\c@unbalance=\count191
+\c@collectmore=\count192
+\doublecol@number=\count193
+\multicoltolerance=\count194
+\multicolpretolerance=\count195
+\full@width=\dimen148
+\page@free=\dimen149
+\premulticols=\dimen150
+\postmulticols=\dimen151
 \multicolsep=\skip49
 \multicolbaselineskip=\skip50
 \partial@page=\box49
 \last@line=\box50
-\maxbalancingoverflow=\dimen144
+\maxbalancingoverflow=\dimen152
 \mult@rightbox=\box51
 \mult@grightbox=\box52
 \mult@gfirstbox=\box53
@@ -110,70 +132,111 @@ Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
 \@tempa=\box89
 \@tempa=\box90
 \@tempa=\box91
-\c@minrows=\count193
-\c@columnbadness=\count194
-\c@finalcolumnbadness=\count195
-\last@try=\dimen145
-\multicolovershoot=\dimen146
-\multicolundershoot=\dimen147
+\c@minrows=\count196
+\c@columnbadness=\count197
+\c@finalcolumnbadness=\count198
+\last@try=\dimen153
+\multicolovershoot=\dimen154
+\multicolundershoot=\dimen155
 \mult@nat@firstbox=\box92
 \colbreak@box=\box93
-\mc@col@check@num=\count196
-) ("c:/Users\Black\Desktop\Github Repos\TheBasics\LaTeX\barebones\page_setup.aux")
+\mc@col@check@num=\count199
+) ("c:/Users\Black\Desktop\Github Repos\TheBasics\LaTeX\theBasics\page_setup.aux")
 \openout1 = `page_setup.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
- ("C:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii"
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: letterpaper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(90.3375pt, 433.62pt, 90.33751pt)
+* v-part:(T,H,B)=(86.724pt, 578.15999pt, 130.086pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=352.49634pt
+* \textheight=578.15999pt
+* \oddsidemargin=18.0675pt
+* \evensidemargin=18.0675pt
+* \topmargin=2.0pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=44.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+("C:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count197
-\scratchdimen=\dimen148
+\scratchcounter=\count266
+\scratchdimen=\dimen156
 \scratchbox=\box94
-\nofMPsegments=\count198
-\nofMParguments=\count199
-\everyMPshowfont=\toks15
-\MPscratchCnt=\count266
-\MPscratchDim=\dimen149
-\MPnumerator=\count267
-\makeMPintoPDFobject=\count268
-\everyMPtoPDFconversion=\toks16
+\nofMPsegments=\count267
+\nofMParguments=\count268
+\everyMPshowfont=\toks17
+\MPscratchCnt=\count269
+\MPscratchDim=\dimen157
+\MPnumerator=\count270
+\makeMPintoPDFobject=\count271
+\everyMPtoPDFconversion=\toks18
 ) ("C:\Program Files\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty"
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
 ) [1
 
-{C:/Users/Black/AppData/Local/MiKTeX/pdftex/config/pdftex.map}] [2] [3] [4]
-Underfull \hbox (badness 10000) in paragraph at lines 24--24
-[]\OT1/cmr/m/n/12 Sed com-modo po-suere pede.
+{C:/Users/Black/AppData/Local/MiKTeX/pdftex/config/pdftex.map}] [2] [3]
+Underfull \hbox (badness 10000) in paragraph at lines 45--45
+[]\OT1/cmr/m/n/12 Nulla male-suada port-ti-tor
  []
 
-[5] [6] [7
+[4] [5]
+Overfull \vbox (18.19115pt too high) has occurred while \output is active []
 
-] ("c:/Users\Black\Desktop\Github Repos\TheBasics\LaTeX\barebones\page_setup.aux") ) 
+
+Overfull \vbox (18.19115pt too high) has occurred while \output is active []
+
+ [6] [7] [8
+
+] ("c:/Users\Black\Desktop\Github Repos\TheBasics\LaTeX\theBasics\page_setup.aux") ) 
 Here is how much of TeX's memory you used:
- 1491 strings out of 479697
- 25333 string characters out of 2877009
- 562997 words of memory out of 3000000
- 18613 multiletter control sequences out of 15000+200000
+ 2035 strings out of 479697
+ 33229 string characters out of 2877009
+ 580161 words of memory out of 3000000
+ 19141 multiletter control sequences out of 15000+200000
  404035 words of font info for 29 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  66i,5n,73p,264b,293s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-Output written on "c:/Users\Black\Desktop\Github Repos\TheBasics\LaTeX\barebones\page_setup.pdf" (7 pages, 40654 bytes).
+Output written on "c:/Users\Black\Desktop\Github Repos\TheBasics\LaTeX\theBasics\page_setup.pdf" (8 pages, 41709 bytes).
 PDF statistics:
- 34 PDF objects out of 1000 (max. 8388607)
+ 37 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

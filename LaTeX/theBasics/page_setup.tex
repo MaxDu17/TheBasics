@@ -1,18 +1,39 @@
-\documentclass[12pt]{report}
+\documentclass[12pt, ]{report}
 
 %geometry package is very convenient. See https://www.overleaf.com/learn/latex/Page_size_and_margins for more on paper formatting 
-% \usepackage[letterpaper, portrait, total={6in, 8in}]{geometry}
+\usepackage[letterpaper, portrait, total={6in, 8in}]{geometry}
 % \usepackage[letterpaper, portrait, margin=1in]{geometry}
+
+% you can also set lengths manually using \setlength, although this is anoying. The general philosophy is that you shouldn't mess with this stuff as there are standards out there 
+% \evensidemargin \oddsidemargin 
+% \linewidth 
+% \paperwidth
+% \paperheight
+% \textwidth 
+% \topmargin
 
 \usepackage{lipsum}
 \usepackage{lscape}
 \usepackage{color}
 
+%%%%%% multicolumn stuff  %%%%%%%%%
 \usepackage{multicol}
 \setlength{\columnsep}{10pt} %to customize the column separation. You can keep it default if you want 
+% \setlength{\columnwidth}{20em}
 %these two will put a vertical column separator 
 \setlength{\columnseprule}{1pt}
 \def\columnseprulecolor{\color{blue}}
+%%%%%%%%%%%
+
+%%%%%%%%% line spacing and text width %%%%%%%
+\renewcommand{\baselinestretch}{1.3} %this is spacing
+%1.0 is single spacing, 1.3 is one and a half, and 1.6 is double spaced
+\setlength{\textwidth}{30em} %sets the length of the text, overrides geometry declaration
+% \setlength{\evensidemargin}{2em} 
+\setlength{\topmargin}{2pt}
+\setlength{\linewidth}{25em}  %for lists
+%%%%%%%%%
+
 
 \begin{document}
 \lipsum[2-10]
