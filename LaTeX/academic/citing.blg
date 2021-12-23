@@ -1,0 +1,28 @@
+[0] Config.pm:312> INFO - This is Biber 2.15 (beta)
+[0] Config.pm:315> INFO - Logfile is 'citing.blg'
+[111] biber-MSWIN64:330> INFO - === 
+[131] Biber.pm:415> INFO - Reading 'citing.bcf'
+[247] Biber.pm:952> INFO - Found 0 citekeys in bib section 0
+[248] Biber.pm:949> INFO - Using all citekeys in bib section 1
+[248] Biber.pm:952> INFO - Found 0 citekeys in bib section 0
+[271] Biber.pm:4334> INFO - Processing section 1
+[287] Biber.pm:4523> INFO - Looking for bibtex format file 'ref.bib' for section 1
+[294] bibtex.pm:1682> INFO - LaTeX decoding ...
+[312] bibtex.pm:1494> INFO - Found BibTeX data source 'ref.bib'
+[364] Utils.pm:395> WARN - BibTeX subsystem: C:\Users\Black\AppData\Local\Temp\biber_tmp_25pu\e800e2552f53b910154f366d4c3730d7_29304.utf8, line 4, warning: 153 characters of junk seen at toplevel
+[364] Utils.pm:395> WARN - BibTeX subsystem: C:\Users\Black\AppData\Local\Temp\biber_tmp_25pu\e800e2552f53b910154f366d4c3730d7_29304.utf8, line 14, warning: 1 characters of junk seen at toplevel
+[364] Utils.pm:395> WARN - BibTeX subsystem: C:\Users\Black\AppData\Local\Temp\biber_tmp_25pu\e800e2552f53b910154f366d4c3730d7_29304.utf8, line 22, warning: 1 characters of junk seen at toplevel
+[364] Utils.pm:395> WARN - BibTeX subsystem: C:\Users\Black\AppData\Local\Temp\biber_tmp_25pu\e800e2552f53b910154f366d4c3730d7_29304.utf8, line 30, warning: 1 characters of junk seen at toplevel
+[364] Utils.pm:395> WARN - BibTeX subsystem: C:\Users\Black\AppData\Local\Temp\biber_tmp_25pu\e800e2552f53b910154f366d4c3730d7_29304.utf8, line 39, warning: 1 characters of junk seen at toplevel
+[364] Utils.pm:395> WARN - BibTeX subsystem: C:\Users\Black\AppData\Local\Temp\biber_tmp_25pu\e800e2552f53b910154f366d4c3730d7_29304.utf8, line 48, warning: 1 characters of junk seen at toplevel
+[364] Utils.pm:395> WARN - BibTeX subsystem: C:\Users\Black\AppData\Local\Temp\biber_tmp_25pu\e800e2552f53b910154f366d4c3730d7_29304.utf8, line 56, warning: 1 characters of junk seen at toplevel
+[364] Utils.pm:395> WARN - BibTeX subsystem: C:\Users\Black\AppData\Local\Temp\biber_tmp_25pu\e800e2552f53b910154f366d4c3730d7_29304.utf8, line 69, warning: 1 characters of junk seen at toplevel
+[364] Utils.pm:395> WARN - BibTeX subsystem: C:\Users\Black\AppData\Local\Temp\biber_tmp_25pu\e800e2552f53b910154f366d4c3730d7_29304.utf8, line 77, warning: 1 characters of junk seen at toplevel
+[364] Utils.pm:395> WARN - BibTeX subsystem: C:\Users\Black\AppData\Local\Temp\biber_tmp_25pu\e800e2552f53b910154f366d4c3730d7_29304.utf8, line 85, warning: 1 characters of junk seen at toplevel
+[380] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[380] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[380] Biber.pm:4162> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[380] Biber.pm:4168> INFO - No sort tailoring available for locale 'en-US'
+[390] bbl.pm:651> INFO - Writing 'citing.bbl' with encoding 'UTF-8'
+[395] bbl.pm:754> INFO - Output to citing.bbl
+[395] Biber.pm:128> INFO - WARNINGS: 10

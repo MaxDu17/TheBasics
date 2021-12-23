@@ -1,0 +1,48 @@
+\documentclass[12pt]{report}
+% \usepackage[]{biblatex}
+\usepackage[backend=biber, style = ieee]{biblatex}
+%style
+    % verbose (everything at point of citation)
+    % verbose-ibid yields a humanities-style citation with ibid 
+        %for humanities citations, you also need to use enotez (see other tutorial)
+    % numeric yields [1], [2], etc (default)
+    % authoryear, authortitle
+    % draft (displays file handles)
+    % ieee
+    % mla 
+\addbibresource{ref.bib}
+
+
+\begin{document}
+\tableofcontents
+\pagebreak 
+\begin{refsection}
+
+First, I will cite an article \cite{article}. Next, I will cite a book \cite{book}, and then a booklet \cite{booklet}. If I want to cite a chapter or page, try \cite{inbook} or \cite{inbookpages} respectively. 
+
+What about manuals? Sure! \cite{manual} We also can do conference proceedings \cite{proceedings} and thesises \cite{thesis}. 
+
+Random stuff goes here \cite{misc} and websites go here \cite{online}. Multiple citations look like this \cite{misc, online}
+
+We can prefix citations and postfix citations. \cite[prefix][postfix]{manual}. This is helpful for footnote citations, as we will see below. 
+
+Alternative citations can include \footcite{online} (helpful for verbose citations). We can wrap parenthesis around citations \parencite{online} (doesn't work here)
+
+For author citation: \cite{online}. for short title: \citetitle{book}. for full title: \citetitle*{book} (doesn't make a difference here). For year: \citeyear{book}. For date: \citedate{online} (no difference here). For URL: \citeurl{online}
+
+If you're feeling like full citations, try \fullcite{online} for an in-text full, and \footfullcite{online} for a footnote full. 
+
+For a foolproof citation, use \autocite{online}, which does everything for you. 
+
+Now, entries only appear in the bibliography if you cite them in the document. If you want to include things that are not explicitly cited, use \nocite{online}. Or, if you want to include everything, try \nocite{*}. 
+
+\printbibliography[title = custom title for bibliography, heading=bibintoc]
+%title: the title of the bibiiography
+%type: which types should be displayed (article, book ,etc) (default is 'all')
+%heading = bibintoc adds the bibiliography to the toc 
+%all parameters are optional 
+
+\end{refsection}
+%you can add more \printbibliography commands later, as long as you encapsulate them with the refsection environments. If you only want one bibliography, then you can remove the refsection environments 
+
+\end{document}

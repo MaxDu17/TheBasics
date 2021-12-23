@@ -1,0 +1,38 @@
+\documentclass[12pt]{report}
+
+\begin{document}
+\chapter{Really basic built-in variables}
+the date is \today 
+
+
+\chapter{Section References}
+\section{One section}
+
+As you can see, this chapter is chapter number \thechapter under section number \thesection. %works also for \thesubsection and \thesubsubsection and \theparagraph, etc 
+
+The chapter name is \chaptername 
+
+the page number is \thepage 
+
+\pagebreak 
+\chapter{Units of measurement and how to use them}
+%pt is around 0.3 mm
+% mm/cm/in are the normal stuff
+% ex is the height of an "x"
+% em is the width of "M"
+% mu is around 1/18 em
+
+%horizontal lines 
+\rule[0pt]{5cm}{2mm} %height above baseline, length, width
+
+This is some random text 
+
+\vspace{2cm}
+
+This is some more random text. Note how much space is between everything. 
+
+\vspace{3cm}
+This is some random text \hspace{2cm} and more text.
+
+
+\end{document}

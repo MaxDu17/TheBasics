@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1640059385 "c:/Users/Black/Desktop/Github Repos/TheBasics/LaTeX/advancedLatex/builtin_variables.tex" "c:/Users/Black/Desktop/Github Repos/TheBasics/LaTeX/advancedLatex/builtin_variables.pdf" "builtin_variables" 1640059385
+["pdflatex"] 1640215765 "c:/Users/Black/Desktop/Github Repos/TheBasics/LaTeX/advancedLatex/variatbles_and_lengths.tex" "c:/Users/Black/Desktop/Github Repos/TheBasics/LaTeX/advancedLatex/variatbles_and_lengths.pdf" "variatbles_and_lengths" 1640215765
   "C:/Program Files/MiKTeX/fonts/tfm/public/cm/cmbx12.tfm" 1136765053 1324 c910af8c371558dc20f2d7822f66fe64 ""
   "C:/Program Files/MiKTeX/fonts/tfm/public/cm/cmr12.tfm" 1136765053 1288 655e228510b4c2a1abe905c368440826 ""
   "C:/Program Files/MiKTeX/fonts/tfm/public/cm/cmr17.tfm" 1136765053 1292 296a67155bdbfc32aa9c636f21e91433 ""
@@ -10,13 +10,13 @@
   "C:/Program Files/MiKTeX/tex/latex/l3backend/l3backend-pdftex.def" 1600952516 23704 02c466ff883953a445c97e55638005fc ""
   "C:/Users/Black/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1607318691 9248670 2e1e77ac18c4dcc50384a412da721495 ""
   "C:/Users/Black/AppData/Local/MiKTeX/pdftex/config/pdftex.map" 1607318568 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
-  "builtin_variables.aux" 1640059385 491 66d58c54aca4e62372ee89abc9464fe9 "pdflatex"
-  "builtin_variables.tex" 1640056932 444 2442995201812e4f9642ef359c06732c ""
-  "c:/Users/Black/Desktop/Github Repos/TheBasics/LaTeX/advancedLatex/builtin_variables.aux" 1640059385 491 66d58c54aca4e62372ee89abc9464fe9 ""
-  "c:/Users/Black/Desktop/Github Repos/TheBasics/LaTeX/advancedLatex/builtin_variables.tex" 1640056932 444 2442995201812e4f9642ef359c06732c ""
+  "c:/Users/Black/Desktop/Github Repos/TheBasics/LaTeX/advancedLatex/variatbles_and_lengths.aux" 1640215765 714 4b7437c850ac7b79f91e72e4b5e5ee5f ""
+  "c:/Users/Black/Desktop/Github Repos/TheBasics/LaTeX/advancedLatex/variatbles_and_lengths.tex" 1640215757 908 f8d0b73a1829dac95ea51720ca55cdba ""
+  "variatbles_and_lengths.aux" 1640215765 714 4b7437c850ac7b79f91e72e4b5e5ee5f "pdflatex"
+  "variatbles_and_lengths.tex" 1640215757 908 f8d0b73a1829dac95ea51720ca55cdba ""
   (generated)
-  "builtin_variables.aux"
-  "c:/Users/Black/Desktop/Github Repos/TheBasics/LaTeX/advancedLatex/builtin_variables.pdf"
-  "c:/Users/Black/Desktop/Github Repos/TheBasics/LaTeX/advancedLatex/builtin_variables.log"
-  "builtin_variables.pdf"
-  "builtin_variables.log"
+  "c:/Users/Black/Desktop/Github Repos/TheBasics/LaTeX/advancedLatex/variatbles_and_lengths.pdf"
+  "variatbles_and_lengths.log"
+  "variatbles_and_lengths.pdf"
+  "c:/Users/Black/Desktop/Github Repos/TheBasics/LaTeX/advancedLatex/variatbles_and_lengths.log"
+  "variatbles_and_lengths.aux"
