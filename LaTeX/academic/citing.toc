@@ -1,3 +1,0 @@
-\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
-\defcounter {refsection}{1}\relax 
-\contentsline {chapter}{custom title for bibliography}{3}{}%

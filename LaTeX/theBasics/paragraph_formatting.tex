@@ -22,6 +22,20 @@ this quick brownfox jumped over the lazy dogs, hwho in a fit of metaphysical glo
 Hello, this is centered text. However, this is not the only way to make centered text
 \end{center}
 
+
+{ \centering another way of centering text %LINE BREAK MANDATORY
+ 
+}
+
+%hfill will "consume" the space that is left over. You can think of it as a set of springs 
+{\hfill yet another way of centering, but it's a little different \hfill}
+
+{\hfill a way of flushing right}
+
+{a way of flushing left\hfill }
+
+%however, this doesn't work for multiple lines. For these, you need the environments. 
+
 \begin{flushleft}
 this is left-justified text the quick brown fox jumped over the lazy dogs 
 \end{flushleft}
@@ -29,5 +43,16 @@ this is left-justified text the quick brown fox jumped over the lazy dogs
 \begin{flushright}
 this is right-justified test the quick brown fox jumped over the lazy dogs 
 \end{flushright}
+
+We are back to normal! 
+
+\pagebreak
+%now, let's try vertical centering. Note that there is a weird thing we have to do 
+\hspace{0pt} %vertical space is removed at the start of a document, so this is needed
+\vfill
+Centered text.
+\vfill
+\hspace{0pt}
+\pagebreak
 
 \end{document}
