@@ -1,0 +1,44 @@
+\documentclass[12pt]{report}
+
+%for glossaries. Note: this will NOT work on mklatex because it requires a special compilation. Overleaf handles this quite well 
+\usepackage{glossaries}
+\makeglossaries 
+
+\usepackage{imakeidx}
+\makeindex
+
+\makeindex[columns=3, title=Alphabetical Index, intoc]
+
+%stylefiles are used https://www.overleaf.com/learn/latex/Indices for more freedom, but this is not implemented here for simplicity 
+
+\begin{document}
+\tableofcontents 
+\pagebreak 
+
+\index{the}
+\index{fox} 
+\index{dogs}
+
+the quick brown fox jumped over the lazy dogs
+
+%for nested indices. The base word is on the left and we can make more nests by going right
+\index{polymerization ! spontaneous}
+\index{polymerization ! slow ! days-long}
+
+%now, we make a glossary entry 
+\newglossaryentry{latex}
+{
+    name=latex,
+    description={Is a markup language specially suited 
+    for scientific documents}
+}
+\newacronym{gcd}{GCD}{Greatest Common Divisor}
+
+To use, we just type out \Gls{latex}
+
+\printglossaries
+\printindex
+
+% \printglossary[type=\acronymtype] %separates acronymns 
+
+\end{document}

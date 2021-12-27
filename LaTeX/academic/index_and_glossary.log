@@ -1,0 +1,362 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.12.7)  27 DEC 2021 18:29
+entering extended mode
+**"c:/Users/Black/Desktop/Github Repos/TheBasics/LaTeX/academic/index_and_glossary.tex"
+("c:/Users/Black/Desktop/Github Repos/TheBasics/LaTeX/academic/index_and_glossary.tex"
+LaTeX2e <2020-10-01> patch level 2
+L3 programming layer <2020-12-03> xparse <2020-03-03> ("C:\Program Files\MiKTeX\tex/latex/base\report.cls"
+Document Class: report 2020/04/10 v1.4m Standard LaTeX document class
+("C:\Program Files\MiKTeX\tex/latex/base\size12.clo"
+File: size12.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
+)
+\c@part=\count177
+\c@chapter=\count178
+\c@section=\count179
+\c@subsection=\count180
+\c@subsubsection=\count181
+\c@paragraph=\count182
+\c@subparagraph=\count183
+\c@figure=\count184
+\c@table=\count185
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen138
+) ("C:\Program Files\MiKTeX\tex/latex/glossaries/base\glossaries.sty"
+Package: glossaries 2021/11/01 v4.49 (NLCT)
+ ("C:\Program Files\MiKTeX\tex/latex/base\ifthen.sty"
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+) ("C:\Program Files\MiKTeX\tex/latex/xkeyval\xkeyval.sty"
+Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
+ ("C:\Program Files\MiKTeX\tex/generic/xkeyval\xkeyval.tex" ("C:\Program Files\MiKTeX\tex/generic/xkeyval\xkvutils.tex"
+\XKV@toks=\toks15
+\XKV@tempa@toks=\toks16
+ ("C:\Program Files\MiKTeX\tex/generic/xkeyval\keyval.tex"))
+\XKV@depth=\count186
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+)) ("C:\Program Files\MiKTeX\tex/latex/mfirstuc\mfirstuc.sty"
+Package: mfirstuc 2021/10/15 v2.07 (NLCT)
+ ("C:\Program Files\MiKTeX\tex/latex/etoolbox\etoolbox.sty"
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count187
+)
+\@glsmfirst=\toks17
+\@glsmrest=\toks18
+) ("C:\Program Files\MiKTeX\tex/latex/textcase\textcase.sty"
+Package: textcase 2019/09/14 v1.00 Text only upper/lower case changing (DPC)
+) ("C:\Program Files\MiKTeX\tex/latex/xfor\xfor.sty"
+Package: xfor 2009/02/05 v1.05 (NLCT)
+) ("C:\Program Files\MiKTeX\tex/latex/datatool\datatool-base.sty"
+Package: datatool-base 2019/09/27 v2.32 (NLCT)
+ ("C:\Program Files\MiKTeX\tex/latex/amsmath\amsmath.sty"
+Package: amsmath 2020/09/23 v2.17i AMS math features
+\@mathmargin=\skip49
+
+For additional information on amsmath, use the `?' option.
+("C:\Program Files\MiKTeX\tex/latex/amsmath\amstext.sty"
+Package: amstext 2000/06/29 v2.01 AMS text
+ ("C:\Program Files\MiKTeX\tex/latex/amsmath\amsgen.sty"
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks19
+\ex@=\dimen139
+)) ("C:\Program Files\MiKTeX\tex/latex/amsmath\amsbsy.sty"
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen140
+) ("C:\Program Files\MiKTeX\tex/latex/amsmath\amsopn.sty"
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count188
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count189
+\leftroot@=\count190
+LaTeX Info: Redefining \overline on input line 399.
+\classnum@=\count191
+\DOTSCASE@=\count192
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box47
+\strutbox@=\box48
+\big@size=\dimen141
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count193
+\c@MaxMatrixCols=\count194
+\dotsspace@=\muskip16
+\c@parentequation=\count195
+\dspbrk@lvl=\count196
+\tag@help=\toks20
+\row@=\count197
+\column@=\count198
+\maxfields@=\count199
+\andhelp@=\toks21
+\eqnshift@=\dimen142
+\alignsep@=\dimen143
+\tagshift@=\dimen144
+\tagwidth@=\dimen145
+\totwidth@=\dimen146
+\lineht@=\dimen147
+\@envbody=\toks22
+\multlinegap=\skip50
+\multlinetaggap=\skip51
+\mathdisplay@stack=\toks23
+LaTeX Info: Redefining \[ on input line 2923.
+LaTeX Info: Redefining \] on input line 2924.
+) ("C:\Program Files\MiKTeX\tex/latex/substr\substr.sty"
+Package: substr 2009/10/20 v1.2 Handle substrings
+\c@su@anzahl=\count266
+) ("C:\Program Files\MiKTeX\tex/latex/datatool\datatool-fp.sty"
+Package: datatool-fp 2019/09/27 v2.32 (NLCT)
+ ("C:\Program Files\MiKTeX\tex/latex/fp\fp.sty"
+Package: fp 1995/04/02
+ `Fixed Point Package', Version 0.8, April 2, 1995 (C) Michael Mehlich ("C:\Program Files\MiKTeX\tex/latex/fp\defpattern.sty"
+Package: defpattern 1994/10/12
+\actioncount=\count267
+) ("C:\Program Files\MiKTeX\tex/latex/fp\fp-basic.sty"
+Package: fp-basic 1996/05/13
+\FP@xs=\count268
+\FP@xia=\count269
+\FP@xib=\count270
+\FP@xfa=\count271
+\FP@xfb=\count272
+\FP@rega=\count273
+\FP@regb=\count274
+\FP@regs=\count275
+\FP@times=\count276
+) ("C:\Program Files\MiKTeX\tex/latex/fp\fp-addons.sty"
+Package: fp-addons 1995/03/15
+) ("C:\Program Files\MiKTeX\tex/latex/fp\fp-snap.sty"
+Package: fp-snap 1995/04/05
+) ("C:\Program Files\MiKTeX\tex/latex/fp\fp-exp.sty"
+Package: fp-exp 1995/04/03
+) ("C:\Program Files\MiKTeX\tex/latex/fp\fp-trigo.sty"
+Package: fp-trigo 1995/04/14
+) ("C:\Program Files\MiKTeX\tex/latex/fp\fp-pas.sty"
+Package: fp-pas 1994/08/29
+) ("C:\Program Files\MiKTeX\tex/latex/fp\fp-random.sty"
+Package: fp-random 1995/02/23
+\FPseed=\count277
+) ("C:\Program Files\MiKTeX\tex/latex/fp\fp-eqn.sty"
+Package: fp-eqn 1995/04/03
+) ("C:\Program Files\MiKTeX\tex/latex/fp\fp-upn.sty"
+Package: fp-upn 1996/10/21
+) ("C:\Program Files\MiKTeX\tex/latex/fp\fp-eval.sty"
+Package: fp-eval 1995/04/03
+)))
+\@dtl@toks=\toks24
+\@dtl@tmpcount=\count278
+\dtl@tmplength=\skip52
+\dtl@sortresult=\count279
+\@dtl@numgrpsepcount=\count280
+\@dtl@datatype=\count281
+\dtl@codeA=\count282
+\dtl@codeB=\count283
+\@dtl@foreach@level=\count284
+) ("C:\Program Files\MiKTeX\tex/latex/glossaries/base\glossaries-compatible-307.sty"
+Package: glossaries-compatible-307 2021/11/01 v4.49 (NLCT)
+)
+\gls@level=\count285
+\@gls@tmpb=\toks25
+\gls@tmplen=\skip53
+\glskeylisttok=\toks26
+\glslabeltok=\toks27
+\glsshorttok=\toks28
+\glslongtok=\toks29
+ ("C:\Program Files\MiKTeX\tex/latex/glossaries/styles\glossary-hypernav.sty"
+Package: glossary-hypernav 2021/11/01 v4.49 (NLCT)
+) ("C:\Program Files\MiKTeX\tex/latex/glossaries/styles\glossary-list.sty"
+Package: glossary-list 2021/11/01 v4.49 (NLCT)
+\glslistdottedwidth=\skip54
+) ("C:\Program Files\MiKTeX\tex/latex/glossaries/styles\glossary-long.sty"
+Package: glossary-long 2021/11/01 v4.49 (NLCT)
+ ("C:\Program Files\MiKTeX\tex/latex/tools\longtable.sty"
+Package: longtable 2020/01/07 v4.13 Multi-page Table package (DPC)
+\LTleft=\skip55
+\LTright=\skip56
+\LTpre=\skip57
+\LTpost=\skip58
+\LTchunksize=\count286
+\LTcapwidth=\dimen148
+\LT@head=\box49
+\LT@firsthead=\box50
+\LT@foot=\box51
+\LT@lastfoot=\box52
+\LT@cols=\count287
+\LT@rows=\count288
+\c@LT@tables=\count289
+\c@LT@chunks=\count290
+\LT@p@ftn=\toks30
+)
+\glsdescwidth=\skip59
+\glspagelistwidth=\skip60
+) ("C:\Program Files\MiKTeX\tex/latex/glossaries/styles\glossary-super.sty"
+Package: glossary-super 2021/11/01 v4.49 (NLCT)
+ ("C:\Program Files\MiKTeX\tex/latex/supertabular\supertabular.sty"
+Package: supertabular 2020/02/02 v4.1g the supertabular environment
+\c@tracingst=\count291
+\ST@wd=\dimen149
+\ST@rightskip=\skip61
+\ST@leftskip=\skip62
+\ST@parfillskip=\skip63
+\ST@pageleft=\dimen150
+\ST@headht=\dimen151
+\ST@tailht=\dimen152
+\ST@pagesofar=\dimen153
+\ST@pboxht=\dimen154
+\ST@lineht=\dimen155
+\ST@prevht=\dimen156
+\ST@toadd=\dimen157
+\ST@dimen=\dimen158
+\ST@pbox=\box53
+)) ("C:\Program Files\MiKTeX\tex/latex/glossaries/styles\glossary-tree.sty"
+Package: glossary-tree 2021/11/01 v4.49 (NLCT)
+\glstreeindent=\skip64
+))
+\glswrite=\write3
+\glo@main@file=\write4
+\openout4 = `index_and_glossary.glo'.
+
+Package glossaries Info: Writing glossary file index_and_glossary.glo on input line 5.
+ ("C:\Program Files\MiKTeX\tex/latex/imakeidx\imakeidx.sty"
+Package: imakeidx 2016/10/15 v1.3e Package for typesetting indices in a synchronous mode
+ ("C:\Program Files\MiKTeX\tex/generic/iftex\ifxetex.sty"
+Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
+ ("C:\Program Files\MiKTeX\tex/generic/iftex\iftex.sty"
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+)) ("C:\Program Files\MiKTeX\tex/generic/iftex\ifluatex.sty"
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+) ("C:\Program Files\MiKTeX\tex/latex/tools\multicol.sty"
+Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
+\c@tracingmulticols=\count292
+\mult@box=\box54
+\multicol@leftmargin=\dimen159
+\c@unbalance=\count293
+\c@collectmore=\count294
+\doublecol@number=\count295
+\multicoltolerance=\count296
+\multicolpretolerance=\count297
+\full@width=\dimen160
+\page@free=\dimen161
+\premulticols=\dimen162
+\postmulticols=\dimen163
+\multicolsep=\skip65
+\multicolbaselineskip=\skip66
+\partial@page=\box55
+\last@line=\box56
+\maxbalancingoverflow=\dimen164
+\mult@rightbox=\box57
+\mult@grightbox=\box58
+\mult@gfirstbox=\box59
+\mult@firstbox=\box60
+\@tempa=\box61
+\@tempa=\box62
+\@tempa=\box63
+\@tempa=\box64
+\@tempa=\box65
+\@tempa=\box66
+\@tempa=\box67
+\@tempa=\box68
+\@tempa=\box69
+\@tempa=\box70
+\@tempa=\box71
+\@tempa=\box72
+\@tempa=\box73
+\@tempa=\box74
+\@tempa=\box75
+\@tempa=\box76
+\@tempa=\box77
+\@tempa=\box78
+\@tempa=\box79
+\@tempa=\box80
+\@tempa=\box81
+\@tempa=\box82
+\@tempa=\box83
+\@tempa=\box84
+\@tempa=\box85
+\@tempa=\box86
+\@tempa=\box87
+\@tempa=\box88
+\@tempa=\box89
+\@tempa=\box90
+\@tempa=\box91
+\@tempa=\box92
+\@tempa=\box93
+\@tempa=\box94
+\@tempa=\box95
+\@tempa=\box96
+\@tempa=\box97
+\c@minrows=\count298
+\c@columnbadness=\count299
+\c@finalcolumnbadness=\count300
+\last@try=\dimen165
+\multicolovershoot=\dimen166
+\multicolundershoot=\dimen167
+\mult@nat@firstbox=\box98
+\colbreak@box=\box99
+\mc@col@check@num=\count301
+))
+\index_and_glossary@idxfile=\write5
+\openout5 = `index_and_glossary.idx'.
+
+
+Writing index file index_and_glossary.idx
+\index_and_glossary@idxfile=\write6
+\openout6 = `index_and_glossary.idx'.
+
+Writing index file index_and_glossary.idx
+("C:\Program Files\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def"
+File: l3backend-pdftex.def 2020-09-24 L3 backend support: PDF output (pdfTeX)
+\l__kernel_color_stack_int=\count302
+\l__pdf_internal_box=\box100
+) ("c:/Users\Black\Desktop\Github Repos\TheBasics\LaTeX\academic\index_and_glossary.aux")
+\openout1 = `index_and_glossary.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+ ("c:/Users\Black\Desktop\Github Repos\TheBasics\LaTeX\academic\index_and_glossary.glsdefs") ("c:/Users\Black\Desktop\Github Repos\TheBasics\LaTeX\academic\index_and_glossary.toc")
+\tf@toc=\write7
+\openout7 = `index_and_glossary.toc'.
+
+ [1
+
+\openout3 = `index_and_glossary.ist'.
+
+
+{C:/Users/Black/AppData/Local/MiKTeX/pdftex/config/pdftex.map}]
+\@gls@deffile=\write8
+\openout8 = `index_and_glossary.glsdefs'.
+
+
+No file index_and_glossary.gls.
+[2]
+runsystem(makeindex index_and_glossary.idx)...executed (allowed).
+
+ ("c:/Users\Black\Desktop\Github Repos\TheBasics\LaTeX\academic\index_and_glossary.ind") [3
+
+
+] ("c:/Users\Black\Desktop\Github Repos\TheBasics\LaTeX\academic\index_and_glossary.aux") ) 
+Here is how much of TeX's memory you used:
+ 5526 strings out of 479697
+ 84757 string characters out of 2877009
+ 416975 words of memory out of 3000000
+ 22542 multiletter control sequences out of 15000+200000
+ 404641 words of font info for 31 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 94i,4n,98p,1206b,188s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb>
+Output written on "c:/Users\Black\Desktop\Github Repos\TheBasics\LaTeX\academic\index_and_glossary.pdf" (3 pages, 27058 bytes).
+PDF statistics:
+ 20 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+
