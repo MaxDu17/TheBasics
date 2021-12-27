@@ -1,0 +1,33 @@
+\documentclass[12pt]{report}
+\usepackage{xcolor} %use dvipsnames for more colors 
+\begin{document}
+
+
+{\color{blue} this is a color switch!}
+%red, green, blue, cyan, magenta, yellow, black, gray, white, darkgray, lightgray
+%brown, lime, olive, orange, pink, purple, teal, violet 
+
+Inline color is achieved by \textcolor{red}{this}
+
+To highlight, try \colorbox{yellow}{this}. 
+
+% To make your own colors, use these options (there are many!)
+\definecolor{mypink1}{rgb}{0.858, 0.188, 0.478}
+\definecolor{mypink2}{RGB}{219, 48, 122}
+\definecolor{mycolor}{hsb}{219, 48, 122}
+\definecolor{mypink3}{cmyk}{0, 0.7808, 0.4429, 0.1412}
+\definecolor{mygray}{gray}{0.9}
+\definecolor{Mycolor2}{HTML}{00F9DE}
+\definecolor{Mywave}{wave}{380} %literally a wavelength!
+\colorlet{myviolet}{red!70!blue!20!} %remaining 10% is filled with white 
+
+And now we are in \textcolor{mypink1}{pink!!}
+
+And now we are in \textcolor{Mywave}{deep violet}
+
+Here we use hex code to make \textcolor{Mycolor2}{another color}
+
+We can also use friendly mixing to make \textcolor{myviolet}{other colors}
+
+To set the entire page background: use \pagecolor{mygray}
+\end{document}

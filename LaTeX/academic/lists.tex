@@ -1,83 +1,124 @@
 \documentclass[12pt]{report}
-% This is not mean to be a comprehensive coverage of tcolorbox. Rather, it is meant to provide a few boxes that you'll use on a practical basis. 
-
-\usepackage{tcolorbox}
-\tcbuselibrary{breakable}
-\tcbuselibrary{skins}
+\usepackage{enumitem} %for more customizable lists 
 
 \begin{document}
+\section{easy lists}
 
-\section{simple boxes environments}
-\begin{tcolorbox}
-This is a box!
-\end{tcolorbox}
+Here's a bulletted list 
+\begin{itemize}
+\item this is a list 
+\item more items 
+\item even more items 
+\end{itemize}
 
-%size can be (in desending size) normal, title, small, fbox, tight, minimal
-\begin{tcolorbox}[size = title,drop shadow=black,title = "A  title"] 
-This is a box!
-\end{tcolorbox}
+Here's a list of numbers 
+\begin{enumerate}
+\item this is a numbered list
+\item another one 
+\end{enumerate}
 
-\begin{tcolorbox}[enhanced, drop fuzzy shadow]
-This is a tcolorbox with a shadow! 
-\end{tcolorbox}
+Here's a list of descriptoins 
+\begin{description}
+\item[test test] another textu which also we want to start looking like lorem ipsum but it's much easilr because we can just ranambel adn we dont's eve nacarte ew;i awioehksajdlkjn  
+\item[another one] here's another one and as you can see, 
+\end{description} 
 
-%some more bells and whistles 
-\begin{tcolorbox}[colback=red!5!white, colframe = red!50!blue, title = "A  title"]
-This is a box!
-    \begin{tcolorbox}[title = Nested Box]
-    whoops I'm recursive!
-    \end{tcolorbox}
-\tcblower
-This is lower! 
-\end{tcolorbox}
+\section{customization}
+%customize your bullets 
+\begin{itemize}
+\item[!!] this is a list 
+\item[hello] more items 
+\item[] even more items 
+\end{itemize}
 
-%to set general settings 
-\tcbset{colback=red!5!white, colframe = red!50!blue}
-\begin{tcolorbox}
-Now, we have the same style!
-\end{tcolorbox}
+%nested lists. Lists are limited to four items deep, but enumitem allows an arbitrary number 
+\begin{enumerate}
+\item this is in the outer list  
+    \begin{itemize}
+    \item hello!
+    \item hello! 
+    \end{itemize}
+\item here we are again! 
+\end{enumerate}
 
-\begin{tcolorbox}[reset]
-I've reset my style but only for this box 
-\end{tcolorbox}
+%demonstration of how the numbering style changes 
+\begin{enumerate}
+\item this is in the outer list  
+    \begin{enumerate}
+    \item hello!
+    \item hello! 
+    \end{enumerate}
+\item here we are again! 
+\end{enumerate}
 
-\section{box inline commands}
-Here, we use \verb|\tcbox| to do some interesting things 
+\begin{itemize}
+\item this is in the outer list  
+    \begin{itemize}
+    \item hello!
+    \item hello! 
+    \end{itemize}
+\item here we are again! 
+\end{itemize}
 
-This is a test \tcbox[on line]{hello World.} test done %images and tables can go in here too 
+%to change the different levels of bullets, we use the specical variables and counters
+\renewcommand{\labelitemi}{QwAcK}
+\renewcommand{\labelitemii}{smallerQwack}
+\renewcommand{\labelitemiii}{smallerQwack}
+\renewcommand{\labelitemiv}{smallerQwack}
 
-\section{Further customization}
-You can make custom box environments 
+\renewcommand{\labelenumi}{QwAcK}
+\renewcommand{\labelenumii}{smallerQwack}
+\renewcommand{\labelenumiii}{smallerQwack}
+\renewcommand{\labelenumiv}{smallerQwack}
 
-%these are a few of the many options. "enhanced" is a required parameter 
-\newtcolorbox{raisedbox}[2][]{colback=red!5!white,
-colframe=red!75!black,fonttitle=\bfseries,
-colbacktitle=red!85!black,enhanced,
-attach boxed title to top center={yshift=-2mm},
-title={#2},#1}
+\begin{itemize}
+\item this is in the outer list  
+    \begin{itemize}
+    \item hello!
+    \item hello! 
+    \end{itemize}
+\item here we are again! 
+\end{itemize}
 
-\begin{raisedbox}[colback=yellow]{Hello there} %you can always override a set parameter 
-This is a box with special title defined as an environment. 
-\end{raisedbox}
+we are at \theenumi or \roman{enumi} if you're interested in roman numbers
+%use enumi, enumii, enumiii, enumiv for the counters 
 
-%these are a few of the many options. "enhanced" is a required parameter 
-\newtcolorbox{standardbox}[2][]{colback=red!5!white,
-colframe=red!75!black,fonttitle=\bfseries,
-colbacktitle=red!85!black,
-title={#2},#1}
+\section{using \texttt{list}}
+\newcounter{boxlblcounter}  
+\newcommand{\makeboxlabel}[1]{\fbox{#1.}}
+\newenvironment{boxlabel}
+  {\begin{list}
+    {\arabic{boxlblcounter}} %what each label should be 
+    {\usecounter{boxlblcounter} 
+     \setlength{\labelwidth}{3em} %space between number and text
+     \setlength{\itemsep}{2pt} %space between items
+     \setlength{\leftmargin}{1.5cm} %self explanatory, reference from edge of text 
+     \setlength{\rightmargin}{2cm}
+     \let\makelabel=\makeboxlabel %this command intercepts the default function and remaps it. this allows the box to be drawn around it 
+    }
+  }
+{\end{list}}
 
-\begin{standardbox}[]{Hello there} %you can always override a set parameter 
-This is a standard box defined as an environment. 
-\end{standardbox}
+\begin{boxlabel}
+\item asdf
+\item asdf
+\item asdf
+\end{boxlabel}
 
-%for inline boxes (this one is good for highlighting)
-\newtcbox{\mybox}[1][red]{on line,
-arc=0pt,outer arc=0pt,colback=#1!10!white,colframe=#1!50!black,
-boxsep=0pt,left=1pt,right=1pt,top=2pt,bottom=2pt,
-boxrule=0pt,bottomrule=1pt,toprule=1pt}
+\section{enumitem package demo}
+the whole deal with the boxlabel shows how hacky a custom list can be. Therefore, there is an easier package out there that prevents the complications. 
 
+\newlist{myitems}{enumerate}{3} %name, type, depth. Depth can be an arbitrary number! 
+\setlist[myitems, 1] %setting level 1 functionality. Remove the number to set everything 
+{label=WW\arabic{myitemsi}., %this is a default counter
+leftmargin=\parindent, %some parameters 
+rightmargin=10pt
+}
+%you can continue defining the other two depths, but we will not do it here for brevity 
 
-This is a \mybox[blue]{test} and we believe in the power of \mybox[green]{boxes}. this can be quite helpful \mybox{especially when I need to highlight}
-
+\begin{myitems}
+\item asdf asdf asdf asdf asd 
+\item test again 
+\end{myitems}
 
 \end{document}
