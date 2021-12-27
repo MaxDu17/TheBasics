@@ -1,0 +1,33 @@
+\documentclass[12pt]{report}
+
+\usepackage{hyperref} %should be the LAST package to be imported 
+\hypersetup{
+    colorlinks=true, %links should be colored 
+    linkcolor=black, %page links 
+    filecolor=magenta,      
+    urlcolor=cyan, %web links 
+    citecolor = black,
+    breaklinks = true,
+    linktocpage = false, %if true, the numbers and not the text in a TOC are links 
+    pdftitle={Overleaf Example}, %this is what the pdf reader will display as the filename
+    pdfauthor={John Doe},
+    pdfstartpage = 1,
+    bookmarks = true, %display bookmarks in adobe
+    bookmarksopen = false, %expand all bookmarks in adobe
+    citebordercolor = 0 1 0, %RGB for the citation borders, overridden by linkcolor 
+    urlbordercolor = 0 1 1, %RGB for url border, overridden by citecolor 
+    menubordercolor = 1 0 0 %RGB for TOC border, overwritten by linkcolor
+    }
+
+\urlstyle{same} %this is the font style that prints the links. Usually it is in mono but this command changes it 
+
+\begin{document}
+Hi! This is a \href{https://www.youtube.com/watch?v=dQw4w9WgXcQ}{link}
+
+To do a bare link, use \url{https://www.youtube.com/watch?v=dQw4w9WgXcQ}
+
+\hypertarget{the sentence}{this is target text!}
+
+\pagebreak 
+We can jump to any target text. Click \hyperlink{thesentence}{here}
+\end{document}
