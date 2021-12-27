@@ -1,0 +1,267 @@
+\documentclass[12pt]{report}
+\usepackage{array} %used for fix-width tables 
+\usepackage{multirow} %needed for multiple rows or columns 
+\usepackage{longtable} %for long tables 
+\usepackage[table]{xcolor} %for coloring tables 
+\begin{document}
+\listoftables
+\section{simple tables}
+
+%this makes a simple matrix of information 
+this is a simple table! 
+
+\begin{tabular}{c c c}
+asdf & bsdf & csdf \\
+dsdf & esdf & fsdf \\
+\end{tabular}
+
+now with all the bells and whistles 
+\begin{center}
+\begin{tabular}[t]{||| c | c | c ||} %other options include l, c r (horizonal justification). In the square bracket,s you can do "t" (top vertical), "b" (bottom ertical), or don't put anything to get the default centering 
+\hline 
+asdf & bsdf & csdf \\
+\hline \hline 
+1 & 23 & 56 \\
+\hline 
+152 & 22 & 36 \\[1cm] %this [1cm] adds vertical space in a table
+\hline 
+\end{tabular}
+\end{center}
+
+with even more bells and whistles
+\begin{center}
+\begin{tabular}{*{3}{|c}|} %note how we can succinctly declare many columns 
+\hline 
+asdf & bsdf & csdf \\
+\hline \hline 
+1 & 23 & 56 \\
+\cline{1-2} %partial line 
+152 & 22 & 36 \\
+\hline 
+\end{tabular}
+\end{center}
+
+now with fixed length
+\begin{center}
+\begin{tabular}{||m{5em} | m{1cm}| m{1cm} ||} %other options are p (top), m (middle), and b(bottom) in terms of vertical alignment 
+\hline 
+asdf & bsdf & csdf \\
+\hline \hline 
+1 & 23 & 56 \\
+\hline 
+152 & 22 & 36 \\
+\hline 
+\end{tabular}
+\end{center}
+
+\section{merging things}
+now with a merged column environment
+\begin{center}
+\begin{tabular}{|p{3cm}||p{3cm}|p{3cm}|p{3cm}|} 
+\hline
+\multicolumn{3}{|c|}{Title here}\\
+\hline 
+asdf & bsdf & csdf \\
+\hline \hline 
+1 & 23 & 56 \\
+\hline 
+152 & 22 & 36 \\
+\hline 
+\end{tabular}
+\end{center}
+
+now with a merged row environment
+\begin{center}
+\begin{tabular}{||| c | c | c ||} %note how the number of vbars is the number of bars on the output
+\hline 
+\multirow{2}{4em}{asdf} & bsdf & csdf \\
+ & 23 & 56 \\ 
+ \hline
+ & 22 & 36 \\ 
+ \hline
+\end{tabular}
+\end{center}
+
+\pagebreak 
+
+\section{long tables}
+\begin{longtable}[c]{|c | c |}
+\caption{test}\\
+%this part will only be on the first page 
+ \hline
+ \multicolumn{2}{| c |}{Begin of Table}\\
+ \hline
+ Something & something else\\
+ \hline
+ \endfirsthead
+
+%this part will be repeated on every page 
+ \hline
+ \multicolumn{2}{|c|}{Continuation of Table}\\
+ \hline
+ Something & something else\\
+ \hline
+ \endhead
+
+%this part will be on the last page 
+  \hline
+ \endfoot
+
+%this part will be at the end of every page 
+ \hline
+ \multicolumn{2}{| c |}{End of Table}\\
+ \hline\hline
+ \endlastfoot
+  Lots of lines & like this\\
+ Lots of lines & like this\\
+ Lots of lines & like this\\
+ Lots of lines & like this\\
+ Lots of lines & like this\\
+ Lots of lines & like this\\
+ Lots of lines & like this\\
+  Lots of lines & like this\\
+ Lots of lines & like this\\
+ Lots of lines & like this\\
+ Lots of lines & like this\\
+ Lots of lines & like this\\
+ Lots of lines & like this\\
+ Lots of lines & like this\\
+  Lots of lines & like this\\
+ Lots of lines & like this\\
+ Lots of lines & like this\\
+ Lots of lines & like this\\
+ Lots of lines & like this\\
+ Lots of lines & like this\\
+ Lots of lines & like this\\
+  Lots of lines & like this\\
+ Lots of lines & like this\\
+ Lots of lines & like this\\
+ Lots of lines & like this\\
+ Lots of lines & like this\\
+ Lots of lines & like this\\
+ Lots of lines & like this\\
+  Lots of lines & like this\\
+ Lots of lines & like this\\
+ Lots of lines & like this\\
+ Lots of lines & like this\\
+ Lots of lines & like this\\
+ Lots of lines & like this\\
+  Lots of lines & like this\\
+ Lots of lines & like this\\
+ Lots of lines & like this\\
+ Lots of lines & like this\\
+ Lots of lines & like this\\
+ Lots of lines & like this\\
+ Lots of lines & like this\\
+  Lots of lines & like this\\
+ Lots of lines & like this\\
+ Lots of lines & like this\\
+ Lots of lines & like this\\
+ Lots of lines & like this\\
+ Lots of lines & like this\\
+ Lots of lines & like this\\
+  Lots of lines & like this\\
+ Lots of lines & like this\\
+ Lots of lines & like this\\
+ Lots of lines & like this\\
+ Lots of lines & like this\\
+ Lots of lines & like this\\
+  Lots of lines & like this\\
+ Lots of lines & like this\\
+ Lots of lines & like this\\
+ Lots of lines & like this\\
+ Lots of lines & like this\\
+ Lots of lines & like this\\
+ Lots of lines & like this\\
+  Lots of lines & like this\\
+ Lots of lines & like this\\
+ Lots of lines & like this\\
+ Lots of lines & like this\\
+ Lots of lines & like this\\
+ Lots of lines & like this\\
+ Lots of lines & like this\\
+  Lots of lines & like this\\
+ Lots of lines & like this\\
+ Lots of lines & like this\\
+ Lots of lines & like this\\
+ Lots of lines & like this\\
+ Lots of lines & like this\\
+  Lots of lines & like this\\
+ Lots of lines & like this\\
+ Lots of lines & like this\\
+ Lots of lines & like this\\
+ Lots of lines & like this\\
+ Lots of lines & like this\\
+ Lots of lines & like this\\
+  Lots of lines & like this\\
+ Lots of lines & like this\\
+ Lots of lines & like this\\
+ Lots of lines & like this\\
+ Lots of lines & like this\\
+ Lots of lines & like this\\
+ Lots of lines & like this\\
+ \end{longtable}
+
+ \section{table objects}
+ You can put a tabular environment inside a table environment, which allows you to position it and also label it 
+
+ \begin{table}[h!]
+    \centering
+    \begin{tabular}{||| c | c | c ||} %note how the number of vbars is the number of bars on the output
+        \hline 
+        asdf & bsdf & csdf \\
+        \hline \hline 
+        1 & 23 & 56 \\
+        \hline 
+        152 & 22 & 36 \\
+        \hline 
+    \end{tabular}
+    \caption{This is a table!}
+    \label{table1}
+\end{table}
+
+As can be seen in Table \ref{table1}, we can reference it!
+
+\section{table formatting}
+\setlength{\arrayrulewidth}{0.5mm} %thickness of the lines 
+\setlength{\tabcolsep}{18pt} %width of the columns 
+\renewcommand{\arraystretch}{1.5} %spaces between rows 
+
+
+\begin{center}
+    \begin{tabular}{| c | c | c |} %note how the number of vbars is the number of bars on the output
+        \hline 
+        asdf & bsdf & csdf \\
+        \hline \hline 
+        1 & 23 & 56 \\
+        \hline 
+        152 & 22 & 36 \\
+        \hline 
+    \end{tabular}
+\end{center}
+
+time to color some tables! 
+%now, if we want to color tables, we use the xcolor package 
+{\rowcolors{1}{green!80!yellow!50}{blue!70!yellow!40} %left is odd, right is even. First parmaeter is when the coloring should start 
+\begin{center}
+    \begin{tabular}{| c | c | c |} %note how the number of vbars is the number of bars on the output
+        \hline 
+        asdf & bsdf & csdf \\
+        \hline \hline 
+        1 & 23 & 56 \\
+        \hline 
+        152 & 22 & 36 \\
+        \hline 
+        152 & 22 & 36 \\
+        \hline 
+        152 & 22 & 36 \\
+        \hline 
+        152 & 22 & 36 \\
+        \hline 
+        152 & 22 & 36 \\
+        \hline 
+    \end{tabular}
+\end{center}
+
+
+\end{document}

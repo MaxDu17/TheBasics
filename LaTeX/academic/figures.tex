@@ -10,6 +10,9 @@
 %for right-sided captions only 
 \usepackage[rightcaption]{sidecap}
 
+%for multiple figures side by side 
+\usepackage{subcaption}
+
 \usepackage{lipsum}
 
 \graphicspath{{./}} %the path here will be the default directory that \includegraphics looks for
@@ -19,8 +22,6 @@
 \DeclareGraphicsExtensions{.jpg, .png,.pdf}
 \begin{document}
 \listoffigures %much like a TOC
-
-\chapter{figures}
 % \includegraphics{demo.jpg}
 \section{Simple figures}
 
@@ -59,5 +60,27 @@ As you can see in Figure \ref{fig:figure1}, we have an image that is referenceab
 \caption{Here is a right caption!}
 \includegraphics[width=0.6\textwidth]{demo}
 \end{SCfigure}
+
+\section{multiple images}
+This is the copy-paste working-out-of-the-box version 
+\begin{figure}[h!]
+\centering
+    \begin{subfigure}[t]{0.35\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{demo}
+        \caption{Picture one}
+        \label{fig:one}
+    \end{subfigure}
+    \begin{subfigure}[t]{0.35\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{demo}
+        \caption{Picture two}
+        \label{fig:two}
+    \end{subfigure}
+\caption{main caption}
+\label{fig:main}
+\end{figure}
+
+
 
 \end{document}
