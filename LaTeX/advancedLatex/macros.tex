@@ -1,0 +1,51 @@
+\documentclass[12pt]{report}
+
+\begin{document}
+\section{new commands}
+
+\newcommand{\mycommand}{hello world!} %can be anything, not just text 
+
+
+\mycommand
+
+%with required arguments 
+\newcommand{\myargumentcommand}[2]{\textbf{#1}, lol it's #2}
+
+\myargumentcommand{hello world again!}{cats!}
+
+%with optional parameters 
+\newcommand{\myoptionalcommand}[2][cats]{\textbf{#2}, lol it's #1} %the first default is "cats"
+
+\myoptionalcommand{hi!}
+
+\myoptionalcommand[dogs]{hi!}
+
+%can change an existing command
+\renewcommand{\textit}[1]{lol you thought that #1}
+\textit{dogs are people}
+
+\section{new environments}
+
+\newenvironment{dogworld}{\texttt{Welcome to dog world!}}{\texttt{Goodbye from dog world!}}
+
+\begin{dogworld}
+
+Some text here 
+
+\end{dogworld}
+
+\newenvironment{catworld}[1]{\texttt{Welcome to cat world, #1!}}{\texttt{Goodbye from cat world!}}
+%you can override an existing environment by using \renewenvironment 
+
+\vspace{2em}
+
+\begin{catworld}{Max}
+
+Some text here 
+
+\end{catworld}
+
+
+
+
+\end{document}

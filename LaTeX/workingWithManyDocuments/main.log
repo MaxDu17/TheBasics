@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.12.7)  28 DEC 2021 17:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.12.7)  28 DEC 2021 17:40
 entering extended mode
-**"c:/Users/Black/Desktop/Github Repos/TheBasics/LaTeX/advancedLatex/counters.tex"
-("c:/Users/Black/Desktop/Github Repos/TheBasics/LaTeX/advancedLatex/counters.tex"
+**"c:/Users/Black/Desktop/Github Repos/TheBasics/LaTeX/workingWithManyDocuments/main.tex"
+("c:/Users/Black/Desktop/Github Repos/TheBasics/LaTeX/workingWithManyDocuments/main.tex"
 LaTeX2e <2020-10-01> patch level 2
 L3 programming layer <2020-12-03> xparse <2020-03-03> ("C:\Program Files\MiKTeX\tex/latex/base\report.cls"
 Document Class: report 2020/04/10 v1.4m Standard LaTeX document class
@@ -20,12 +20,16 @@ File: size12.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
 \bibindent=\dimen138
-) ("C:\Program Files\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def"
+) ("C:\Program Files\MiKTeX\tex/latex/subfiles\subfiles.sty"
+Package: subfiles 2020/11/14 v2.2 Multi-file projects (package)
+ ("C:\Program Files\MiKTeX\tex/latex/import\import.sty"
+Package: import 2020/04/01  v 6.2
+)) ("C:\Program Files\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def"
 File: l3backend-pdftex.def 2020-09-24 L3 backend support: PDF output (pdfTeX)
 \l__kernel_color_stack_int=\count186
 \l__pdf_internal_box=\box47
-) ("c:/Users\Black\Desktop\Github Repos\TheBasics\LaTeX\advancedLatex\counters.aux")
-\openout1 = `counters.aux'.
+) ("c:/Users\Black\Desktop\Github Repos\TheBasics\LaTeX\workingWithManyDocuments\main.aux")
+\openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
 LaTeX Font Info:    ... okay on input line 3.
@@ -41,26 +45,21 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 3.
 LaTeX Font Info:    ... okay on input line 3.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 3.
 LaTeX Font Info:    ... okay on input line 3.
-\c@mycounter=\count187
-\c@mycounter2=\count188
-\c@outercounter=\count189
-\c@innercounter=\count190
-\c@outeroutercounter=\count191
- [1
+ ("c:/Users\Black\Desktop\Github Repos\TheBasics\LaTeX\workingWithManyDocuments\directimport.tex") ("c:/Users\Black\Desktop\Github Repos\TheBasics\LaTeX\workingWithManyDocuments\subfile.tex") [1
 
-{C:/Users/Black/AppData/Local/MiKTeX/pdftex/config/pdftex.map}] ("c:/Users\Black\Desktop\Github Repos\TheBasics\LaTeX\advancedLatex\counters.aux") ) 
+{C:/Users/Black/AppData/Local/MiKTeX/pdftex/config/pdftex.map}] ("c:/Users\Black\Desktop\Github Repos\TheBasics\LaTeX\workingWithManyDocuments\main.aux") ) 
 Here is how much of TeX's memory you used:
- 434 strings out of 479697
- 8061 string characters out of 2877009
- 273880 words of memory out of 3000000
- 17605 multiletter control sequences out of 15000+200000
- 404671 words of font info for 31 fonts, out of 3000000 for 9000
+ 494 strings out of 479697
+ 9638 string characters out of 2877009
+ 272507 words of memory out of 3000000
+ 17652 multiletter control sequences out of 15000+200000
+ 404334 words of font info for 30 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 43i,4n,49p,211b,100s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\Black\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-Output written on "c:/Users\Black\Desktop\Github Repos\TheBasics\LaTeX\advancedLatex\counters.pdf" (1 page, 26242 bytes).
+ 52i,4n,59p,226b,115s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb>
+Output written on "c:/Users\Black\Desktop\Github Repos\TheBasics\LaTeX\workingWithManyDocuments\main.pdf" (1 page, 21032 bytes).
 PDF statistics:
- 19 PDF objects out of 1000 (max. 8388607)
+ 14 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

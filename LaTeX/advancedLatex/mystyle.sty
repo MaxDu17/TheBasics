@@ -1,0 +1,14 @@
+%we import packages here 
+\ProvidesPackage{mystyle} %must be same name as the file 
+
+%this is how you declare the parameters you pass in 
+\DeclareOption{doublespace}{\renewcommand{\baselinestretch}{1.6}} %this is spacing}
+\DeclareOption{singlespace}{\renewcommand{\baselinestretch}{1.3}} %this is spacing}
+
+\ExecuteOptions{singlespace}%default things to execute
+\ProcessOptions\relax 
+
+
+\RequirePackage{lipsum} %either type of declaration works. this one is stronger. 
+\usepackage{amsmath} 
+
