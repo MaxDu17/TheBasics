@@ -1,5 +1,94 @@
-\arabic{counter variable}
-\roman{counter variable}
-\Roman{counter variable}
-\Alph{counter variable}
-\alph{counter variable}
+\documentclass[12pt]{report}
+
+\begin{document}
+\section{basic counters}
+
+\newcounter{mycounter} %default is zero
+\newcounter{mycounter2}[section] %resets every section 
+\setcounter{mycounter}{23} 
+\addtocounter{mycounter}{2}
+\addtocounter{mycounter}{-6}
+\stepcounter{mycounter} %steps by one 
+\stepcounter{mycounter2} 
+
+The counter is currently at \themycounter
+
+%other ways of showing what the counter can do 
+\arabic{mycounter}
+
+\roman{mycounter}
+
+\Roman{mycounter}
+
+\Alph{mycounter}
+
+\alph{mycounter}
+
+\fnsymbol{mycounter2} 
+
+% \value{mycounter} %returns a latex number for use in other commands
+\addtocounter{mycounter}{\value{mycounter}} %double your counter value 
+
+%reference a counter, like you might for a picture or a table 
+\refstepcounter{mycounter}
+\label{test}
+
+As we can see in \ref{test}, we can reference a counter 
+
+\section{Linking counters}
+\newcounter{outercounter}
+\newcounter{innercounter}
+\newcounter{outeroutercounter}
+\counterwithin{innercounter}{outercounter}
+\counterwithin{outercounter}{outeroutercounter} %you can recursively nest! 
+
+\stepcounter{innercounter}
+\theinnercounter %note how this is redefined to include both counters 
+
+\stepcounter{innercounter}
+\noindent \theinnercounter
+
+\stepcounter{innercounter}
+\noindent\theinnercounter
+
+%now, when we step the outer counter, we see that the inner counter resets 
+\stepcounter{outercounter}
+\noindent\theinnercounter
+
+%we unlink one of our dependencies 
+\counterwithout{outercounter}{outeroutercounter} 
+\stepcounter{outercounter}
+\noindent\theinnercounter
+
+\section{Existing counters}
+
+%the counter names are these, minus the "the"
+\thepart
+
+\thechapter 
+
+\thesection
+
+\thesubsubsection 
+
+\theparagraph 
+
+\thesubparagraph 
+
+\thefigure 
+
+\theequation
+
+\thetable
+
+\thefootnote
+
+\theenumi
+
+\theenumii
+
+\theenumiii
+
+\theenumiv
+\end{document}
+
