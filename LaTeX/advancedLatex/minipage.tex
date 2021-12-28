@@ -1,1 +1,28 @@
-https://www.sascha-frank.com/latex-minipage.html
+%https://www.sascha-frank.com/latex-minipage.html%
+%minipages allow us to put two images side by side without needing the subfigure environment, which can be finicky
+%it also allows us to put literally anything next to each other, so it's quite convenient
+
+\documentclass[12pt]{report}
+
+\begin{document}
+%minipages without empty lines between them will be place side by side 
+
+\begin{minipage}[c]{0.3\textwidth} %t, b , c for alligning things together 
+this is a planned test of the emergency dank meme system. At the tone, two large fat rabbits will appear. Beep. 
+\end{minipage}
+\begin{minipage}[c]{0.3\textwidth}
+\centering 
+\begin{tabular}{|c | c | c|}
+\hline 
+a & b & c \\
+1 & 2 & 3 \\
+\hline 
+\end{tabular}
+\end{minipage}
+\begin{minipage}[c]{0.3\textwidth} %t, b , c for alligning things together 
+this is a planned test of the emergency dank meme system. At the tone, two large fat rabbits will appear. Beep. 
+\end{minipage}
+
+\vspace{2em}
+Back to normal! Back to normal! Back to normal! Back to normal! Back to normal! Back to normal! Back to normal! Back to normal! Back to normal! Back to normal! Back to normal! Back to normal! Back to normal! Back to normal! Back to normal! Back to normal! Back to normal! 
+\end{document}

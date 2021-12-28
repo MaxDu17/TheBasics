@@ -1,0 +1,16 @@
+\documentclass[12pt]{report}
+\usepackage{xcolor}
+\usepackage{lipsum}
+\usepackage{xargs}
+
+\usepackage[colorinlistoftodos,prependcaption,textsize=tiny]{todonotes}
+\newcommandx{\test}[2][1=]{\todo[linecolor=red,backgroundcolor=red!25,bordercolor=red,#1]{#2}}
+
+\begin{document}
+\listoftodos[What I need to work on]
+\pagebreak 
+
+\lipsum[2]
+\test{I am in a to-do list!}
+\lipsum[3]
+\end{document}

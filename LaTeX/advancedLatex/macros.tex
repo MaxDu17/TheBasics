@@ -1,4 +1,5 @@
 \documentclass[12pt]{report}
+\usepackage{xargs} %for xargs demo 
 
 \begin{document}
 \section{new commands}
@@ -23,6 +24,14 @@
 %can change an existing command
 \renewcommand{\textit}[1]{lol you thought that #1}
 \textit{dogs are people}
+
+\section{xargs} %an easier way of making macros with optional arguments
+\newcommandx{\hellodog}[3][1 = bob, 3 = joe, usedefault=@]{Hello #1, #2, #3}
+%the usedefault means that if you put a @ in the square bracket, you use the default values in the declaration. By default, the usedefault symbol is an empty string so you can do []
+\hellodog[steve]{max} %use default for "joe", override bob with steve, and use required "max"
+
+\hellodog[@]{max}[] %note how the empty string replaces "joe", and the @ indicates that we want "bob" for the first argument 
+
 
 \section{new environments}
 

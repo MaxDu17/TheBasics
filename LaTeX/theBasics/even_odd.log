@@ -1,0 +1,102 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.12.7)  28 DEC 2021 18:10
+entering extended mode
+**"c:/Users/Black/Desktop/Github Repos/TheBasics/LaTeX/theBasics/even_odd.tex"
+("c:/Users/Black/Desktop/Github Repos/TheBasics/LaTeX/theBasics/even_odd.tex"
+LaTeX2e <2020-10-01> patch level 2
+L3 programming layer <2020-12-03> xparse <2020-03-03> ("C:\Program Files\MiKTeX\tex/latex/base\report.cls"
+Document Class: report 2020/04/10 v1.4m Standard LaTeX document class
+("C:\Program Files\MiKTeX\tex/latex/base\size12.clo"
+File: size12.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
+)
+\c@part=\count177
+\c@chapter=\count178
+\c@section=\count179
+\c@subsection=\count180
+\c@subsubsection=\count181
+\c@paragraph=\count182
+\c@subparagraph=\count183
+\c@figure=\count184
+\c@table=\count185
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen138
+) ("C:\Program Files\MiKTeX\tex/latex/tools\layout.sty"
+Package: layout 2014/10/28 v1.2c Show layout parameters
+\oneinch=\count186
+\cnt@paperwidth=\count187
+\cnt@paperheight=\count188
+\cnt@hoffset=\count189
+\cnt@voffset=\count190
+\cnt@textheight=\count191
+\cnt@textwidth=\count192
+\cnt@topmargin=\count193
+\cnt@oddsidemargin=\count194
+\cnt@evensidemargin=\count195
+\cnt@headheight=\count196
+\cnt@headsep=\count197
+\cnt@marginparsep=\count198
+\cnt@marginparwidth=\count199
+\cnt@marginparpush=\count266
+\cnt@footskip=\count267
+\fheight=\count268
+\ref@top=\count269
+\ref@hoffset=\count270
+\ref@voffset=\count271
+\ref@head=\count272
+\ref@body=\count273
+\ref@foot=\count274
+\ref@margin=\count275
+\ref@marginwidth=\count276
+\ref@marginpar=\count277
+\Interval=\count278
+\ExtraYPos=\count279
+\PositionX=\count280
+\PositionY=\count281
+\ArrowLength=\count282
+) ("C:\Program Files\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def"
+File: l3backend-pdftex.def 2020-09-24 L3 backend support: PDF output (pdfTeX)
+\l__kernel_color_stack_int=\count283
+\l__pdf_internal_box=\box47
+) ("c:/Users\Black\Desktop\Github Repos\TheBasics\LaTeX\theBasics\even_odd.aux")
+\openout1 = `even_odd.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+
+Two-sided document style, odd page.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 6.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 6.
+[1
+
+{C:/Users/Black/AppData/Local/MiKTeX/pdftex/config/pdftex.map}]
+Two-sided document style, even page.
+[2] ("c:/Users\Black\Desktop\Github Repos\TheBasics\LaTeX\theBasics\even_odd.aux") ) 
+Here is how much of TeX's memory you used:
+ 496 strings out of 479697
+ 8748 string characters out of 2877009
+ 291126 words of memory out of 3000000
+ 17663 multiletter control sequences out of 15000+200000
+ 404197 words of font info for 30 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 43i,11n,49p,194b,199s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/latxfont/lcircle1.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/latxfont/line10.pfb>
+Output written on "c:/Users\Black\Desktop\Github Repos\TheBasics\LaTeX\theBasics\even_odd.pdf" (2 pages, 54941 bytes).
+PDF statistics:
+ 33 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+
