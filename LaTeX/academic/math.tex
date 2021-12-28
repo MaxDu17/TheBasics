@@ -1,0 +1,209 @@
+\documentclass[12pt]{report}
+\usepackage{amsmath} %for most things 
+\usepackage{amssymb} %for fonts 
+\usepackage{mathtools} %for boxed within environment 
+\usepackage{amsthm} %theorems and proofs 
+
+
+\DeclareMathOperator*{\mysymbol}{OOGLABOOGLA} %define custom math symbol 
+\begin{document}
+\chapter{Math!}
+
+\section{The basics}
+This is math mode: $x = 2$. This is also math mode \(x = 3\). Display mode is blow 
+
+$$ x = 2$$
+
+or 
+
+\[ x = 3\]
+
+Fraction: $\frac{1}{2}$. 
+
+Super and subscripts: $e_{subscript}^{superscript}$ 
+
+
+\section{Different environments}
+%the equation environment adds some more flexibility 
+\begin{equation} \label{eq1} %this is how you label an equation 
+    \begin{split}
+    A & = 2 \\
+    & = 3x
+    \end{split}
+\end{equation}
+
+For longer equations 
+\begin{multline*} %no numerical label this time 
+p(x) = 3x^6 + 14x^5y + 590x^4y^2 + 19x^3y^3\\ 
+- 12x^2y^4 - 12xy^5 + 2y^6 - a^3b^3
+\end{multline*}
+
+To align equations 
+%you can use multiple alignment symbols as long as you are consistent 
+\begin{align*} 
+2x - 5y &=  8 \\ 
+3x + 9y &=  -12
+\end{align*} 
+
+If you just want a few centered equations 
+\begin{gather*} 
+2x - 5y =  8 \\ 
+3x^2 + 9y =  3a + c
+\end{gather*}
+
+\section{keywords}
+All trig functions 
+
+$$\max, \min, \ker, \exp, \deg, \gcd, \lg, \ln, \Pr, \sup, \det, \hom, \lim, \log, \arg$$
+
+This is now $\mysymbol_2 = 2$
+
+$$a \mathbin{BOB} b = 3$$ %for binary relationships 
+
+$$a \mathrel{IS SMALLER THAN} b$$ %for relational operators 
+
+\section{large operators}
+$$\int_{1}^n$$
+
+$$\rvert_0^1$$
+
+$$\sum_{i = 1}^\infty$$
+
+$$\prod_{i = 1}^n$$
+
+$$\cup_{i = 1}^n$$
+
+$$\cap_{i = 1}^n$$
+
+$$\oint_1^n$$
+
+$$\coprod_{i = 1}^n$$
+
+\section{matrices}
+inline matrix $\begin{smallmatrix} a & b\\ c & d \end{smallmatrix}$ 
+
+
+plain matrix  %although all of these can also be used in-line 
+
+$$\begin{matrix}
+a & b & c \\
+d & e & f \\
+\end{matrix}$$
+
+round matrix 
+$$\begin{pmatrix}
+a & b & c \\
+d & e & f \\
+\end{pmatrix}$$
+
+square matrix (most common)
+$$\begin{bmatrix}
+a & b & c \\
+d & e & f \\
+\end{bmatrix}$$
+
+curly matrix 
+$$\begin{Bmatrix}
+a & b & c \\
+d & e & f \\
+\end{Bmatrix}$$
+
+piped matrix 
+$$\begin{vmatrix}
+a & b & c \\
+d & e & f \\
+\end{vmatrix}$$
+
+double piped matrix 
+$$\begin{Vmatrix}
+a & b & c \\
+d & e & f \\
+\end{Vmatrix}$$
+
+piecewise expression 
+
+$$\begin{cases}
+x^2 + 2 & x = 3\\
+3 & x \neq 3
+\end{cases}$$
+
+\section{Equivalence relations}
+$$x \not \leq 2$$ %how to negate any equivalence relation 
+
+$$x \stackrel{a}{=} z$$ %stacking things 
+
+\section{Brackets and stuff}
+$$(a) [a] \{a\} \langle a\rangle |a| \|a\|$$ %different brackets 
+
+Manual sizing 
+
+$$\big( \Big( \bigg( \Bigg($$
+
+For dynamic sizing
+
+$$\left(\int_a^b\right)$$ %works with every type of bracket 
+
+Asymmetrical dynamically sized bracket 
+
+$$\left(\int_a^b\right.$$ %note the period 
+
+\section{spacing}
+%in increasing order
+%the normal spacing falls between \! and \, 
+\begin{align*}
+f(x) &= x^2\! +3x\! +2 \\
+f(x) &= x^2+3x+2 \\
+f(x) &= x^2\, +3x\, +2 \\
+f(x) &= x^2\: +3x\: +2 \\
+f(x) &= x^2\; +3x\; +2 \\
+f(x) &= x^2\ +3x\ +2 \\
+f(x) &= x^2\quad +3x\quad +2 \\
+f(x) &= x^2\qquad +3x\qquad +2
+\end{align*}
+
+%for a quick space, use 
+$c~d$
+
+%\thinmuskip \medmuskip \thickmuskip is used for spacing around operators. \medmuskip is for binary, and \thickmuskip is for relational 
+
+\section{Display styles}
+
+%these switches only work on one side of the equation 
+\begin{align*} 
+\displaystyle \int_a^bxdx &= \displaystyle 2 \\
+\textstyle \int_a^bxdx &= \textstyle 2\\ %for in-line display 
+\scriptstyle f(x) &= \scriptstyle 2\\ %superscript 
+\scriptscriptstyle f(x) &= \scriptscriptstyle 2\\ %supersuperscript 
+\end{align*}
+
+\section{fonts}
+$$3x^2 = 3 + 3$$ 
+$$\mathnormal{3x^2 = 3 + 3}$$ %it's "bumpier", as you can see 
+$$\mathrm{3x^2 = 3 + 3}$$
+$$\mathit{3x^2 = 3 + 3}$$
+$$\mathbf{3x^2 = 3 + 3}$$
+$$\mathsf{3x^2 = 3 + 3}$$
+$$\mathtt{3x^2 = 3 + 3}$$
+
+\section{Proofs and Theorems}
+\theoremstyle{definition} %boldface title, roman body (definitions, problems, and examples)
+\theoremstyle{plain} %boldface title, italicized body (theorems, lemmas)
+\newtheorem{mytheorem}{Theorem title}[section] %name, title, counter resets 
+\newtheorem{myproof}{proof title}[mytheorem] %resets in every new theorem 
+
+\theoremstyle{remark} %italicized title, roman body
+\newtheorem*{remarks}{Remark title} %this gives an unnumbered environment 
+
+\begin{mytheorem}
+This is a test of what the theorem environment is capable of 
+    \begin{myproof}
+    Testing again! \qedsymbol 
+    \end{myproof}
+\end{mytheorem}
+
+\begin{remarks}
+test test
+\end{remarks}
+
+%to do a proof, just make a special theorem environment and use the \qedsymbol to end your proof 
+\end{document}
