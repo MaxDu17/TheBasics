@@ -26,15 +26,16 @@ print(a[np.where( a > 15)]) #the same thing as above but shorter
 x = np.random.randint(10, 2000, 100)
 top_ten= np.partition(x, -10)[-10:] #argpartition pivots the array around some pivot (-10)
 #everything before the pivot will be smaller than the pivot and everything after will be larger. Therefore, the top-k will be the last 10
-print(top_ten)
 #there also exists an argpartition version that returns the indexes of the top-k, which can be useful s
 
+#swap columns
+x[[0, 1]] = x[[1, 0]] #use the selection list technique to your advantage
 
 # advanced tricks
 x = np.arange(5)
 y = x[:, np.newaxis] #expands dimensions, like np.expand_dims does
 x = np.ones((3, 3, 3, 3, 3))
-print(x[1,...,2, 0]) #we select the second of the first dimension, all of the second and third dimension, the third of the fourth dimension, and the first of the last dimension
+x[1,...,2, 0] #we select the second of the first dimension, all of the second and third dimension, the third of the fourth dimension, and the first of the last dimension
 
 # SOMETHING VERY TRICKY: tuples vs lists vs boolean indexing
 x[[1, 1, 1]] #essentially prints x[1] three times
