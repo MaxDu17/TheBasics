@@ -1,0 +1,3 @@
+\contentsline {chapter}{\numberline {1}A normal chapter}{2}{}%
+\contentsline {chapter}{\numberline {A}First}{3}{}%
+\contentsline {chapter}{\numberline {B}Second}{4}{}%

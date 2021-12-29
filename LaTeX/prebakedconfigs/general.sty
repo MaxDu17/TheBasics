@@ -1,0 +1,55 @@
+\ProvidesPackage{general}
+%barebones versitile style with IEEE formatted citing 
+
+%these things are the barebones implementation
+\usepackage[utf8]{inputenc}
+\usepackage{xargs}
+
+%images
+\usepackage{caption} %for images
+\usepackage{subcaption} %for subimages
+\usepackage{graphicx}
+
+%section formatting
+\usepackage{appendix}
+
+%document formatting
+\usepackage[hyperfootnotes=false]{hyperref} %allows clicking
+\hypersetup{colorlinks = true, urlcolor=cyan, citecolor = black, linkcolor=black}
+\usepackage[bottom]{footmisc} %footnote library
+\usepackage[pdftex,dvipsnames]{xcolor} %for colors
+\usepackage{fancyhdr} % for headers and stuff
+\usepackage{amsmath}
+
+\usepackage[letterpaper]{geometry} %master formatting
+
+%additional stuff
+\usepackage{longtable} % for multipage tables
+
+%some simple macros for tables and organization
+\newcommand{\h}{\hline}
+\newcommand{\hh}{\hline\hline}
+\newcommand{\rt}{$\rightarrow$}
+
+
+\newcommand{\fancydivide}{
+    \vspace{0.7em}
+    {\centering \rule{5em}{1pt}\\}
+    \vspace{0.7em}
+\noindent}
+
+
+%for testing purposes
+\usepackage{lipsum}
+
+%index
+\usepackage{imakeidx}
+\makeindex
+
+%for the bibliography
+\usepackage[style=ieee]{biblatex} 
+\addbibresource{ref.bib} %CHANGETHIS
+\renewcommand{\autocite}[1]{\footcite{#1}}
+\renewcommand{\cite}[1]{\footcite{#1}}
+
+\usepackage{subfiles} % Best loaded last in the preamble

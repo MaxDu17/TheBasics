@@ -1,0 +1,148 @@
+%a good style file for math and science writing 
+\ProvidesPackage{mathsci}
+\usepackage{indentfirst}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{fancyhdr}
+\usepackage[total={6in, 8in}]{geometry}
+\usepackage{amsthm}
+
+
+\usepackage{wrapfig}  
+\usepackage{hyperref} % add hyper links
+\usepackage{mathtools}
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+
+\theoremstyle{plain}
+\newtheorem{corollary}{Corollary}[theorem]
+
+\theoremstyle{plain}
+\newtheorem{lemma}[theorem]{Lemma}
+
+\theoremstyle{remark}
+\newtheorem*{remark}{Remark}
+\usepackage[]{algorithm2e}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\rfoot{\thepage}
+
+\newcommand{\ra}[1]{\renewcommand{\arraystretch}{#1}}
+\newcommand\tab[1][1cm]{\hspace*{#1}}
+\newcommand\tabhead[1]{\small\textbf{#1}}
+
+\newcommand{\abs}[1]{\lvert #1 \rvert}
+\newcommand{\absfit}[1]{\left\lvert #1 \right\rvert}
+\newcommand{\norm}[1]{\left\lVert #1 \right\rVert}
+\newcommand{\eval}[3]{\left[#1\right]_{#2}^{#3}}
+\renewcommand{\(}{\left(}
+\renewcommand{\)}{\right)}
+\newcommand{\floor}[1]{\left\lfloor#1\right\rfloor}
+\newcommand{\ceil}[1]{\left\lceil#1\right\rceil}
+\newcommand{\pd}[1]{\frac{\partial}{\partial #1}}
+\newcommand{\inner}[1]{\langle#1\rangle}
+\newcommand{\cond}{\bigg|}
+\newcommand{\rank}[1]{\mathbf{rank}(#1)}
+\newcommand{\range}[1]{\mathbf{range}(#1)}
+\newcommand{\nullsp}[1]{\mathbf{null}(#1)}
+\newcommand{\repr}[1]{\left\langle#1\right\rangle}
+
+\DeclareMathOperator{\Var}{Var}
+\newcommand{\SD}{\operatorname{SD}}
+\newcommand{\Cov}{\operatorname{Cov}}
+\DeclareMathOperator{\tr}{tr}
+\DeclareMathOperator{\Tr}{\mathbf{Tr}}
+\DeclareMathOperator{\diag}{\mathbf{diag}}
+\DeclareMathOperator{\dist}{\mathbf{dist}}
+\DeclareMathOperator{\prob}{\mathbf{prob}}
+\DeclareMathOperator{\dom}{\mathbf{dom}}
+\DeclareMathOperator{\E}{\mathbf{E}}
+\DeclareMathOperator{\R}{\mathbb{R}}
+\DeclareMathOperator{\var}{\mathbf{var}}
+\DeclareMathOperator{\quartile}{\mathbf{quartile}}
+\DeclareMathOperator{\conv}{\mathbf{conv}}
+\DeclareMathOperator{\VC}{VC}
+\DeclareMathOperator*{\argmax}{arg\,max}
+\DeclareMathOperator*{\argmin}{arg\,min}
+\newcommand{\Uni}{\operatorname{Uni}}
+\newcommand{\Ber}{\operatorname{Ber}}
+\newcommand{\Bin}{\operatorname{Bin}}
+\newcommand{\Geo}{\operatorname{Geo}}
+\newcommand{\NegBin}{\operatorname{NegBin}}
+\newcommand{\Zipf}{\operatorname{Zipf}}
+\newcommand{\HypG}{\operatorname{HypG}}
+\newcommand{\Poi}{\operatorname{Poi}}
+\newcommand{\Beta}{\operatorname{Beta}}
+\newcommand{\Normal}{\operatorname{\mathcal{N}}}
+\newcommand{\N}{\operatorname{\mathcal{N}}}
+\newcommand{\Exp}{\operatorname{Exp}}
+\DeclareMathOperator{\NP}{\mathbf{NP}}
+\DeclareMathOperator{\coNP}{\mathbf{coNP}}
+\DeclareMathOperator{\TIME}{\mathsf{TIME}}
+\DeclareMathOperator{\polytime}{\mathbf{P}}
+\DeclareMathOperator{\PH}{\mathbf{PH}}
+\DeclareMathOperator{\SIZE}{\mathbf{SIZE}}
+\DeclareMathOperator{\ATIME}{\mathbf{ATIME}}
+\DeclareMathOperator{\SPACE}{\mathbf{SPACE}}
+\DeclareMathOperator{\ASPACE}{\mathbf{ASPACE}}
+\DeclareMathOperator{\NSPACE}{\mathbf{NSPACE}}
+\DeclareMathOperator{\Z}{\mathbb{Z}}
+\DeclareMathOperator{\EXP}{\mathbf{EXP}}
+\DeclareMathOperator{\NEXP}{\mathbf{NEXP}}
+\DeclareMathOperator{\NTIME}{\mathbf{NTIME}}
+\DeclareMathOperator{\DTIME}{\mathbf{DTIME}}
+\DeclareMathOperator{\poly}{poly}
+\DeclareMathOperator{\BPP}{\mathbf{BPP}}
+\DeclareMathOperator{\ZPP}{\mathbf{ZPP}}
+\DeclareMathOperator{\RP}{\mathbf{RP}}
+\DeclareMathOperator{\coRP}{\mathbf{coRP}}
+\DeclareMathOperator{\BPL}{\mathbf{BPL}}
+\DeclareMathOperator{\IP}{\mathbf{IP}}
+\DeclareMathOperator{\PSPACE}{\mathbf{PSPACE}}
+\DeclareMathOperator{\NPSPACE}{\mathbf{NPSPACE}}
+\DeclareMathOperator{\SAT}{\mathsf{SAT}}
+\DeclareMathOperator{\NL}{\mathbf{NL}}
+\DeclareMathOperator{\PCP}{\mathbf{PCP}}
+\DeclareMathOperator{\PP}{\mathbf{PP}}
+\DeclareMathOperator{\cost}{cost}
+\let\Pr\relax
+\DeclareMathOperator*{\Pr}{\mathbf{Pr}}
+
+
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{hyperref}
+
+
+%some code 
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{navy}{rgb}{0,0,0.31}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.96,0.96,0.96}
+
+%code setup parameters 
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},    %different colors
+    commentstyle=\color{codegray},
+    keywordstyle=\color{navy},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codegreen},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,     %if true, shows each space with bracket            
+    showstringspaces=false, %same but for string spaces
+    showtabs=false,                  
+    tabsize=2
+}
+
+\lstset{style=mystyle}
+\usepackage{subfiles} % Best loaded last in the preamble

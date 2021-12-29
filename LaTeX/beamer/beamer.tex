@@ -1,0 +1,94 @@
+\documentclass{beamer} %optional font size determination 
+%https://hartwork.org/beamer-theme-matrix/
+\usetheme{Madrid}
+% structurebold, structurebolditalic, structuresmallcapsserif, structureitalicsserif, serif and default
+\usefonttheme{default}
+\usecolortheme{default} 
+%themes and color themes are two axes, so you can mix and match! 
+
+%this puts the TOC at the beginning of each section and highlights the upcoming section 
+\AtBeginSection[]
+{
+  \begin{frame}
+    \frametitle{Table of Contents}
+    \tableofcontents[currentsection]
+  \end{frame}
+}
+
+\title{A title}
+\subtitle{A subtitle}
+\author{Max Du}
+\institute{Stanford University}
+\date{\today}
+\logo{The bee is a very interesting creature} %use an \includegraphics for a real logo 
+
+\begin{document}
+\frame{\titlepage} %makes title page 
+
+\section{Introduction!} %sections become topics in the presentation 
+
+%table of contents (commented out because we have the \atbeginsection macro working for us)
+% \begin{frame}
+% \frametitle{Table of Contents}
+% \tableofcontents
+% \end{frame}
+
+\frame{This is a simple frame!}
+
+%sort of like a slide, but can be a group of slides (transitions can happen)
+\begin{frame} 
+\frametitle{Slide title}
+Text text text here is where the next slide's text goes .
+\end{frame}
+
+%with animations 
+\begin{frame} 
+\frametitle{Now, with animations }
+Text text text here is where the next slide's text goes .
+\begin{enumerate}
+\item<1-> hello! %the number determins which slide it shows up on 
+\item<2-> hello again!
+\item<3-> hello again again!
+\item<1-> ha! %it need not be in order! 
+\end{enumerate}
+\end{frame}
+
+%with animations that aren't in a list 
+\begin{frame} %every pause becomes another slide 
+    The bee \pause 
+    Is a \pause 
+    very interesting \pause 
+    creature!
+\end{frame}
+
+\section{Blocks and other customization}
+\begin{frame}
+    \alert{highlighted} text this way 
+
+    \begin{block}{Remark}
+        here's something we should talk about 
+    \end{block}
+
+    \begin{alertblock}{Important thing }
+        here's something we should talk about 
+    \end{alertblock}
+
+    \begin{examples}
+    asdfasdf asdf asdf asdf asdf 
+    \end{examples}
+\end{frame}
+
+\begin{frame}
+\frametitle{Two-column slide}
+\begin{columns}
+    \column{0.5\textwidth}
+    \begin{itemize}
+    \item First item
+    \item Second item
+    \end{itemize}
+    \column{0.5\textwidth}
+    Another column 
+\end{columns}
+\end{frame}
+
+\end{document}
