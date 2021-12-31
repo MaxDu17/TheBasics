@@ -1,2 +1,0 @@
-\beamer@sectionintoc {1}{Introduction!}{2}{0}{1}
-\beamer@sectionintoc {2}{Blocks and other customization}{12}{0}{2}

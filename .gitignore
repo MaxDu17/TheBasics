@@ -5,3 +5,8 @@
 *synctex.gz
 *.run.xml 
 *.lol
+*.glsdefs
+*.ilg
+*.ist
+*.toc
+*.tdo 
