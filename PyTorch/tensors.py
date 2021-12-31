@@ -18,8 +18,9 @@ print(x.shape)
 print(x.dtype)
 print(x.device)
 
-#other native operations
-print(x.sum())
+#other common operations
+x.squeeze() #remove extra dimension
+x = torch.unsqueeze(x, dim = 1) #add an extra dimension at axis 1
 
 #scalars to python scalars
 x = torch.ones((1, ))

@@ -9,4 +9,7 @@
 *.ilg
 *.ist
 *.toc
-*.tdo 
+*.tdo
+*.pth
+*.pt
+Pytorch/data
