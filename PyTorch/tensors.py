@@ -7,7 +7,8 @@ x = torch.from_numpy(x_np)
 x_np = x.numpy()
 
 #device can be cpu or gpu (cuda)
-x = torch.tensor([1., 2.], device = "cpu", dtype = torch.float32) #like numpy, you can make tensors from lists
+x = torch.tensor([1., 2.], device = "cpu", dtype = torch.float32, requires_grad = True) #like numpy, you can make tensors from lists
+#requries grad is true by default
 x = torch.ones_like(x)
 x = torch.rand_like(x) #random numbers between 0 and 1
 x = torch.rand(size = (2, 3))
@@ -17,6 +18,10 @@ x = torch.zeros(size = (2, 3))
 print(x.shape)
 print(x.dtype)
 print(x.device)
+
+# casting
+x_casted = x.double() #.float(), .int()
+x_casted = x.type(torch.FloatTensor) #DoubleTensor, IntTensor
 
 #other common operations
 x.squeeze() #remove extra dimension

@@ -1,0 +1,1 @@
+# https://pytorch.org/docs/stable/optim.html #all the types of optimizers
