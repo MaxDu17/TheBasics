@@ -1,0 +1,27 @@
+\documentclass[12pt]{report}
+% \usepackage{algorithmic}
+\usepackage[ruled,vlined,commentsnumbered,titlenotnumbered]{algorithm2e}
+
+\begin{document}
+
+\begin{algorithm}[h!]
+\SetKwFunction{FName}{FunctionNameHere}
+\SetKwProg{Fn}{Function}{:}{}
+\Fn{\FName{a, b , c, d}}{
+    stuff here
+}
+\KwIn{input here }
+\KwOut{output here}
+\tcc{comment here}
+\While{condition}{Stuff here}
+\If{ condition }{ \Return{return value}}
+\ElseIf{ condition }{ 
+	\tcc{comment}
+	\Return{ stuff}\\ %needed to add another comment line 
+	\tcc{comment}
+}
+\caption{caption}\label{alg:alg2}
+\end{algorithm}
+
+
+\end{document}
