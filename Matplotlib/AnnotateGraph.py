@@ -1,4 +1,5 @@
 import matplotlib.pyplot as plt
+import matplotlib.patches as patches
 import numpy as np
 
 ax = plt.subplot()
@@ -12,6 +13,11 @@ ax.axvline(x=0.5, color='r', linestyle='--') #vertical line
 #here we exercise all different sorts of annotation powers
 
 ax.text(3, 1.5, r"$\sigma \sum_{x = 0}^\infty f(x)$  test")
+
+# Create a Rectangle patch
+rect = patches.Rectangle((0, 0), 1, 1, linewidth=1, edgecolor='r', facecolor='red')
+ax.add_patch(rect)
+
 
 ax.annotate('test', xy=(2, 1), xytext=(2, 1.5),
              arrowprops=dict(facecolor='black', shrink=0.05),
