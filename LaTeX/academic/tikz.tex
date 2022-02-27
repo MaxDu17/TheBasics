@@ -57,22 +57,10 @@
    \draw (\x cm,1pt) -- (\x cm,-1pt) node[anchor=north] {$\x$};
 \end{tikzpicture}
 
+\vspace{5em}
 %now. let's look at flow charts. This allows us to draw bayes networks with ease 
 \tikzstyle{startstop} = [rectangle, rounded corners, minimum width=3cm, minimum height=1cm,text centered, draw=black, fill=red!30]
 \tikzstyle{varr} = [circle,fill = white, draw=black]
-
-% \begin{center}
-% \begin{tikzpicture}
-%     \node[shape=circle,draw=black] (B) at (0,0) {B};
-%     \node[shape=circle,draw=black] (A) at (1.5,3) {A};
-%     \node[shape=circle,draw=black] (C) at (3,0) {C};
-%     \node[shape=circle,draw=black] (D) at (1.5, -3) {D};
-%     \path [->] (B) edge node[left] {} (A);
-%     \path [->](B) edge node[left] {} (C);
-%     \path [->](D) edge node[left] {} (C);
-% \end{tikzpicture}
-% \end{center}
-\vspace{5em}
 
 %relative positioning
 \begin{tikzpicture}[node distance=2cm] %how far apart by default
@@ -83,4 +71,17 @@
 \node (start2) [startstop, below of = var] {end};
 \draw [thick,->] (start) -- (var);
 \end{tikzpicture}
+
+%and now, an example of a bayes network using absolute positioning 
+\begin{center}
+\begin{tikzpicture}
+    \node[shape = circle, draw=black] (B) at (0,0) {B};
+    \node[shape=circle,draw=black] (A) at (1.5,3) {A};
+    \node[shape=circle,draw=black] (C) at (3,0) {C};
+    \node[shape=circle,draw=black] (D) at (1.5, -3) {D};
+    \path [->] (B) edge node[left] {} (A);
+    \path [->](B) edge node[left] {} (C);
+    \path [->](D) edge node[left] {} (C);
+\end{tikzpicture}
+\end{center}
 \end{document}
