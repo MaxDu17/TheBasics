@@ -1,0 +1,44 @@
+\documentclass[12pt]{report}
+% \usepackage{algorithmic}
+\usepackage{mdframed} %this is a nicer version of tcolorbox 
+\usepackage{xcolor}
+\usepackage{tcolorbox}
+
+%http://mirrors.ibiblio.org/CTAN/macros/latex/contrib/mdframed/mdframed-example-default.pdf as the example 
+
+\begin{document}
+\mdfdefinestyle{redBorder}{%
+linecolor=red,linewidth=3pt,%
+leftmargin=1cm,rightmargin=1cm,
+topline=false,bottomline=false,
+backgroundcolor = olive
+}
+\definecolor{mygray}{gray}{0.9}
+%generic box
+\begin{mdframed}
+test test test 
+\end{mdframed}
+
+%use style 
+\begin{mdframed}[style=redBorder]
+adadaaaaada 
+\end{mdframed}
+
+%title and manual definitions 
+\begin{mdframed}[linecolor=blue, backgroundcolor = mygray, frametitle = bob and alice went to the supermarket]
+test test test 
+\end{mdframed}
+
+%the best solution environment
+\mdfdefinestyle{genericSolution}{%
+linecolor=black, backgroundcolor = mygray, frametitle = Solution
+}
+\begin{mdframed}[style=genericSolution]
+test test test 
+\end{mdframed}
+
+%an alternative (but suboptimal solution)
+\begin{tcolorbox} 
+test test test 
+\end{tcolorbox}
+\end{document}
