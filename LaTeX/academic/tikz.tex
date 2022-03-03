@@ -84,4 +84,16 @@
     \path [->](D) edge node[left] {} (C);
 \end{tikzpicture}
 \end{center}
+
+%labeling your edges 
+\begin{center}
+\begin{tikzpicture}
+    \node[shape = circle, draw=black] (B) at (0,0) {B};
+    \node[shape=circle,draw=black] (A) at (1.5,3) {A};
+    \node[shape=circle,draw=black] (C) at (3,0) {C};
+    \path [->] (B) edge node[midway] {test} (A);
+    \path [->](B) edge node[midway] {test } (C);
+    \path [->](C) edge node[midway] {test } (A);
+\end{tikzpicture}
+\end{center}
 \end{document}
