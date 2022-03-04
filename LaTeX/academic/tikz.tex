@@ -79,13 +79,13 @@
     \node[shape=circle,draw=black] (A) at (1.5,3) {A};
     \node[shape=circle,draw=black] (C) at (3,0) {C};
     \node[shape=circle,draw=black] (D) at (1.5, -3) {D};
-    \path [->] (B) edge node[left] {} (A);
-    \path [->](B) edge node[left] {} (C);
-    \path [->](D) edge node[left] {} (C);
+    \path [->] (B) edge (A);
+    \path [->](B) edge[blue] (C);
+    \path [->](D) edge (C);
 \end{tikzpicture}
 \end{center}
 
-%labeling your edges 
+%labeling your edges. Note how we used the node 
 \begin{center}
 \begin{tikzpicture}
     \node[shape = circle, draw=black] (B) at (0,0) {B};
