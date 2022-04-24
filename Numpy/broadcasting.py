@@ -16,7 +16,7 @@ v6 = np.zeros((200, 1, 200))
 
 v1 * scalar #easily legal
 v1 * v2 #this is legal
-v2 * v3 #also legal
+x = v2 * v3 #also legal. We broadcast the last two dims of v2 and then add a leading dim to v3
 v5 * v6 #mutual broadcasting (interesting!)
 
 try:

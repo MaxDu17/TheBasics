@@ -13,7 +13,7 @@ stack = nn.Sequential(
         )
 stack(input) #this is how you call the sequential model
 
-# dummy network
+# this is an example of a whole, class-based model
 class NeuralNetwork(nn.Module):
     def __init__(self):
         super(NeuralNetwork, self).__init__()

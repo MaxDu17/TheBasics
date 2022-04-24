@@ -1,7 +1,7 @@
 import numpy as np
 import torch
 
-#between numpy and torch
+#between numpy and torch. The key!
 x_np = np.array([3., 4.])
 x = torch.from_numpy(x_np)
 x_np = x.numpy()
