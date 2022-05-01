@@ -2,6 +2,7 @@ import torch
 from torch import nn
 
 device = 'cuda' if torch.cuda.is_available() else 'cpu' #this will determine which device
+print(torch.cuda.is_available())
 x = torch.tensor([1, 2])
 x.to(device) #move tensor to device
 
