@@ -26,6 +26,7 @@ x_casted = x.type(torch.FloatTensor) #DoubleTensor, IntTensor
 #other common operations
 x.squeeze() #remove extra dimension
 x = torch.unsqueeze(x, dim = 1) #add an extra dimension at axis 1
+x = torch.ravel(x) #flatten
 
 #scalars to python scalars
 x = torch.ones((1, ))
@@ -41,5 +42,11 @@ y = torch.zeros(size = (2, 3))
 z = torch.zeros(size = (2, 3))
 w = torch.cat([x, y, z], dim = 0) #concatenate along the first axis, which yields (6, 3)
 print(w.shape)
+w = torch.stack([x, y, z], dim = 0) #stacks (adds another dimension) to 3, 2, 3
+print(w.shape)
+
+x = torch.tensor([True, False, True])
+x = ~x #you can invert booleans like this
+print(x)
 
 #all tensor operations use the same symbols as numpy

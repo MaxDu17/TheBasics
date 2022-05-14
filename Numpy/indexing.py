@@ -36,6 +36,8 @@ x = np.arange(5)
 y = x[:, np.newaxis] #expands dimensions, like np.expand_dims does
 x = np.ones((3, 3, 3, 3, 3))
 x[1,...,2, 0] #we select the second of the first dimension, all of the second and third dimension, the third of the fourth dimension, and the first of the last dimension
+x[1, None, 1] # same as X[1, :, 1]
+
 
 # SOMETHING VERY TRICKY: tuples vs lists vs boolean indexing
 x[[1, 1, 1]] #essentially prints x[1] three times
