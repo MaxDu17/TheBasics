@@ -29,7 +29,9 @@ optimizer = torch.optim.SGD(model.parameters(), lr = 0.001)
 #standard training procedure; this is a bogus objective but it shows how it works
 pred = model(input)
 y = torch.ones_like(pred) #just for show
-loss = loss_fn(pred, y)
+
+loss = torch.sum(pred) # any scalar function can have a grad operation
+# loss = loss_fn(pred, y)
 optimizer.zero_grad() #gradients add up, so you must reset
 loss.backward() #backpropagation. Put a vector into the backward() to compute the jacobian product
 optimizer.step() #applies change
