@@ -8,6 +8,16 @@ import random
 
 image =  torch.ones(size = (3, 256, 256), dtype = torch.uint8) # our "image"
 
+# compose transforms
+transform = transforms.Compose([
+                transforms.ToTensor(),
+                transforms.Normalize((0.4914, 0.4822, 0.4465), (0.2023, 0.1994, 0.2010))
+            ])
+
+# randomly apply a list of transforms with a given probability
+transforms = transforms.RandomApply(torch.nn.ModuleList([
+     transforms.ColorJitter(),
+ ]), p=0.3)
 #cropping and padding
 transform = transforms.CenterCrop((100, 100))
 transform = transforms.RandomCrop(size = (20, 20))

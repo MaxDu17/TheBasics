@@ -30,6 +30,16 @@ x = x.view(-1, 2) # [3, 2] but no explicit reshape
 x = x.reshape(-1, 2) # explicit shaping (copies tensor)
 x = torch.transpose(x, 0, 1) #flipping two axes
 x = torch.ravel(x) #flatten
+norm = torch.linalg.norm(x)
+
+# triangulation
+x = torch.ones(size = (3, 3))
+y = torch.triu(x, diagonal = 0)
+print(y)
+y = torch.tril(x, diagonal = 0)
+print(y)
+y = torch.tril(x, diagonal = 1) #shifting diagonal upper right
+print(y)
 
 #scalars to python scalars
 x = torch.ones((1, ))
