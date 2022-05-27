@@ -26,6 +26,9 @@ x_casted = x.type(torch.FloatTensor) #DoubleTensor, IntTensor
 #other common operations
 x.squeeze() #remove extra dimension
 x = torch.unsqueeze(x, dim = 1) #add an extra dimension at axis 1
+x = x.view(-1, 2) # [3, 2] but no explicit reshape
+x = x.reshape(-1, 2) # explicit shaping (copies tensor)
+x = torch.transpose(x, 0, 1) #flipping two axes
 x = torch.ravel(x) #flatten
 
 #scalars to python scalars
@@ -33,8 +36,6 @@ x = torch.ones((1, ))
 print(x.item())
 
 #numpy-identical slicing applies with tensors. We will not repeat it here
-
-# x = x.to("cuda") #how you move to gpu
 
 #join tensors
 x = torch.zeros(size = (2, 3))
@@ -44,6 +45,8 @@ w = torch.cat([x, y, z], dim = 0) #concatenate along the first axis, which yield
 print(w.shape)
 w = torch.stack([x, y, z], dim = 0) #stacks (adds another dimension) to 3, 2, 3
 print(w.shape)
+w_list = torch.chunk(w, 3, dim = 0)
+print(w_list[0].shape) # [1, 2, 3] because we split [3, 2, 3] into 3 chunks
 
 x = torch.tensor([True, False, True])
 x = ~x #you can invert booleans like this

@@ -24,7 +24,8 @@ class NeuralNetwork(nn.Module):
 model = NeuralNetwork()
 
 loss_fn = nn.CrossEntropyLoss() #many more losses available, or you can do your own!
-optimizer = torch.optim.SGD(model.parameters(), lr = 0.001)
+# optimizer = torch.optim.SGD(model.parameters(), lr = 0.001)
+optimizer = torch.optim.Adam(model.parameters(), lr=2e-4, betas=(0.5,0.999))
 
 #standard training procedure; this is a bogus objective but it shows how it works
 pred = model(input)
@@ -46,7 +47,7 @@ with torch.no_grad():
 print(z.requires_grad) #does not propagate because we used a non-gradient environment
 print(w.requires_grad) #if z is not tracked, its dependencies are also not tracked (because it's upstream)
 
-#equivalent code
-# z = torch.matmul(x, w)+b
-# z_det = z.detach() #detaching removes a variable from optimizing, which affects all upstream
+#using detach() to do the same
+z = torch.matmul(x, w)+b
+z_det = z.detach() #detaching removes a variable from optimizing, which affects all upstream
 

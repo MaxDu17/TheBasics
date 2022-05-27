@@ -12,8 +12,9 @@ import numpy as np
 
 #now the matplotlib method
 img = mpimg.imread("samples/sample.png")
-plt.imsave("samples/sample_writtenplt.png", img) #this is NOT a numpy array 
+plt.imsave("samples/sample_writtenplt.png", img) #this is NOT a numpy array
 print(img.shape)
+
 
 #now the pillow method
 img = Image.open("samples/sample.png")

@@ -28,7 +28,7 @@ class CustomDataset(Dataset):
     def __len__(self):
         return 100
 
-    def __getitem__(self, idx):
+    def __getitem__(self, idx): #disadvangate: you need to restart when you reach the end
         return 1
 
 
@@ -92,4 +92,4 @@ sampler3 = DataLoader(a, batch_size=1, shuffle=False, sampler=None,
 # d = torch.utils.data.SequentialSampler(a) #samples from a map-style dataset sequentially
 # d = torch.utils.data.RandomSampler(a, replacement = False, num_samples =None) #samples from a dataset randomly
 # d = torch.utils.data.WeightedRandomSampler(weights, num_samples = 3, replacement = True)
-# d = torch.utils.data.BatchSampler(d, batch_size = 10, drop_last = True) #takes in a sampler and makes it into a batch 
+# d = torch.utils.data.BatchSampler(d, batch_size = 10, drop_last = True) #takes in a sampler and makes it into a batch
