@@ -7,6 +7,7 @@ from torch.utils.data import random_split
 #an iterable-style dataset
 class CustomIterable(IterableDataset):  # object,
     def __init__(self):
+        super(CustomIterable).__init__()
         pass
 
     def __len__(self):
@@ -23,6 +24,7 @@ class CustomIterable(IterableDataset):  # object,
 #the advantagbe is that you can easily split into training and testing sets, and you can also iterate better
 class CustomDataset(Dataset):
     def __init__(self):
+        super(CustomDataset).__init__()
         pass
 
     def __len__(self):
