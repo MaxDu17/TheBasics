@@ -37,3 +37,24 @@ for key, value in b.items():
 del b["one"] #removes this
 print(b)
 
+# sets
+b = {1, 6, 4, 8, 8} # creates {8, 1, 4, 6} set
+a = {1, 4, 21}
+
+c = b - a # difference
+c = a | b # union
+a.update(b) #in-place union
+c = a & b # intersection
+c = a ^ b # symmetric difference
+
+# tuples
+# immutable, but if they refer to objects, these objects can be modififed
+b = ("test", ) # the extra comma indicates that it's a tuple
+b = ("test", "rat", "mouse",)
+t, r, m = b # tuple unpacking
+b = (t, r, m) #tuple packing
+
+x = 2
+y = 3
+x, y = y, x # quick value swap using tuple packing!
+
