@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="11a1b250-5c6f-47f9-a10e-0b3a5fee58d4" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/other.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/other.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Matplotlib/test.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Matplotlib/test.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Matplotlib/test.png" beforeDir="false" afterPath="$PROJECT_DIR$/Matplotlib/test.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PyTorch/dataloader.py" beforeDir="false" afterPath="$PROJECT_DIR$/PyTorch/dataloader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Markdown/thebasics.md" beforeDir="false" afterPath="$PROJECT_DIR$/Markdown/thebasics.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -193,6 +192,7 @@
       <workItem from="1652543262185" duration="1974000" />
       <workItem from="1653325832458" duration="9498000" />
       <workItem from="1654027836437" duration="3003000" />
+      <workItem from="1655689978590" duration="725000" />
     </task>
     <servers />
   </component>
