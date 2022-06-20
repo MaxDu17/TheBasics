@@ -1,8 +1,6 @@
 a = '''this is a test of the
     testing system''' #this is how you make extended strings
 
-# strings can be sliced like any array
-print(len(a))
 
 a.upper()
 a.lower()

@@ -1,0 +1,15 @@
+# make sure you install your version of the pytorch suite! This doesn't do it for you
+name: generalenv
+channels:
+  - defaults
+dependencies:
+  - pip
+  - pip:
+      - imageio
+      - pandas
+      - tqdm
+      - h5py
+      - sklearn
+      - matplotlib
+      - opencv-python
+#      - pyaudio
