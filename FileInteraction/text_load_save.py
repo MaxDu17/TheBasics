@@ -40,3 +40,7 @@ lines = ["this", "is", "a", "test"]
 with open("samples/sample_written.txt", "w") as f: #use "a" to append to a file
     f.write(text)
     f.writelines("\n".join(lines)) #this adds an endline between each element of the list
+
+with open("samples/sample.txt", "r") as f:
+    for line in f: #another way of iterating through a file
+        print(line)

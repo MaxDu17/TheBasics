@@ -5,9 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="11a1b250-5c6f-47f9-a10e-0b3a5fee58d4" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/other.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/other.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AdvancedPython/classes/Inheritance.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AdvancedPython/classes/Instance_vs_Static.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AdvancedPython/classes/Metaclass.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AdvancedPython/decorators.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AdvancedPython/package imports/Bear/Cub.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AdvancedPython/package imports/Fish/Smelt.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AdvancedPython/package imports/Fish/Tuna.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AdvancedPython/package imports/Fish/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Markdown/thebasics.md" beforeDir="false" afterPath="$PROJECT_DIR$/Markdown/thebasics.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AdvancedPython/package imports/packageimports.py" beforeDir="false" afterPath="$PROJECT_DIR$/AdvancedPython/package imports/packageimports.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileInteraction/text_load_save.py" beforeDir="false" afterPath="$PROJECT_DIR$/FileInteraction/text_load_save.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Librosa/basicoperations.py" beforeDir="false" afterPath="$PROJECT_DIR$/AdvancedPython/DocStrings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pythonic Operations/datastructures.py" beforeDir="false" afterPath="$PROJECT_DIR$/AdvancedPython/datastructures.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pythonic Operations/itertools_tips.py" beforeDir="false" afterPath="$PROJECT_DIR$/AdvancedPython/itertools_tips.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pythonic Operations/lambdas_and_maps.py" beforeDir="false" afterPath="$PROJECT_DIR$/AdvancedPython/lambdas_and_maps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pythonic Operations/package_tricks.py" beforeDir="false" afterPath="$PROJECT_DIR$/AdvancedPython/package_tricks.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cv2/thebasics.py" beforeDir="false" afterPath="$PROJECT_DIR$/AdvancedPython/by_reference.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,8 +63,13 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.BarGraph">
-    <configuration name="BarGraph" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\Desktop\Working Repository\TheBasics\AdvancedPython" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.datastructures">
+    <configuration name="Inheritance" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="TheBasics" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -58,12 +77,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Matplotlib" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/AdvancedPython/classes" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Matplotlib/BarGraph.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/AdvancedPython/classes/Inheritance.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -72,7 +91,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="dataloader" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="Metaclass" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="TheBasics" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -80,12 +99,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PyTorch" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/AdvancedPython/classes" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PyTorch/dataloader.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/AdvancedPython/classes/Metaclass.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -94,7 +113,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="making_models" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="datastructures" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="TheBasics" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -102,12 +121,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PyTorch" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/AdvancedPython" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PyTorch/making_models.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/AdvancedPython/datastructures.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -116,7 +135,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="tensors" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="packageimports" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="TheBasics" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -124,12 +143,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PyTorch" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/AdvancedPython/package imports" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PyTorch/tensors.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/AdvancedPython/package imports/packageimports.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -138,7 +157,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="transforms" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="text_load_save" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="TheBasics" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -146,12 +165,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PyTorch" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/FileInteraction" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PyTorch/transforms.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/FileInteraction/text_load_save.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -162,11 +181,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.BarGraph" />
-        <item itemvalue="Python.dataloader" />
-        <item itemvalue="Python.tensors" />
-        <item itemvalue="Python.transforms" />
-        <item itemvalue="Python.making_models" />
+        <item itemvalue="Python.datastructures" />
+        <item itemvalue="Python.packageimports" />
+        <item itemvalue="Python.text_load_save" />
+        <item itemvalue="Python.Metaclass" />
+        <item itemvalue="Python.Inheritance" />
       </list>
     </recent_temporary>
   </component>
@@ -192,7 +211,7 @@
       <workItem from="1652543262185" duration="1974000" />
       <workItem from="1653325832458" duration="9498000" />
       <workItem from="1654027836437" duration="3003000" />
-      <workItem from="1655689978590" duration="725000" />
+      <workItem from="1655689978590" duration="7479000" />
     </task>
     <servers />
   </component>
@@ -213,24 +232,28 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/TheBasics$itertools_tips.coverage" NAME="itertools_tips Coverage Results" MODIFIED="1650837828067" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Pythonic Operations" />
-    <SUITE FILE_PATH="coverage/TheBasics$datastructures.coverage" NAME="datastructures Coverage Results" MODIFIED="1650301816635" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Pythonic Operations" />
+    <SUITE FILE_PATH="coverage/TheBasics$Metaclass.coverage" NAME="Metaclass Coverage Results" MODIFIED="1655696609617" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AdvancedPython/classes" />
     <SUITE FILE_PATH="coverage/TheBasics$ScatterGraph.coverage" NAME="ScatterGraph Coverage Results" MODIFIED="1645575491327" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Matplotlib" />
-    <SUITE FILE_PATH="coverage/TheBasics$BarGraph.coverage" NAME="BarGraph Coverage Results" MODIFIED="1653975064309" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Matplotlib" />
     <SUITE FILE_PATH="coverage/TheBasics$optimizing_models.coverage" NAME="optimizing_models Coverage Results" MODIFIED="1652778846050" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PyTorch" />
     <SUITE FILE_PATH="coverage/TheBasics$modifying_arrays.coverage" NAME="modifying_arrays Coverage Results" MODIFIED="1650840093716" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Numpy" />
-    <SUITE FILE_PATH="coverage/TheBasics$package_tricks.coverage" NAME="package_tricks Coverage Results" MODIFIED="1653325887112" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Pythonic Operations" />
     <SUITE FILE_PATH="coverage/TheBasics$transforms.coverage" NAME="transforms Coverage Results" MODIFIED="1653683995829" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PyTorch" />
-    <SUITE FILE_PATH="coverage/TheBasics$lambdas_and_maps.coverage" NAME="lambdas_and_maps Coverage Results" MODIFIED="1650837983114" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Pythonic Operations" />
-    <SUITE FILE_PATH="coverage/TheBasics$indexing.coverage" NAME="indexing Coverage Results" MODIFIED="1652515905046" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Numpy" />
     <SUITE FILE_PATH="coverage/TheBasics$dataloader.coverage" NAME="dataloader Coverage Results" MODIFIED="1653853896067" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PyTorch" />
     <SUITE FILE_PATH="coverage/TheBasics$AnnotateGraph.coverage" NAME="AnnotateGraph Coverage Results" MODIFIED="1645519693992" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Matplotlib" />
     <SUITE FILE_PATH="coverage/TheBasics$matrix_operations.coverage" NAME="matrix_operations Coverage Results" MODIFIED="1650840044742" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Numpy" />
-    <SUITE FILE_PATH="coverage/TheBasics$making_models.coverage" NAME="making_models Coverage Results" MODIFIED="1653683361189" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PyTorch" />
     <SUITE FILE_PATH="coverage/TheBasics$tensors.coverage" NAME="tensors Coverage Results" MODIFIED="1653684469574" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PyTorch" />
+    <SUITE FILE_PATH="coverage/TheBasics$Histogram.coverage" NAME="Histogram Coverage Results" MODIFIED="1651569842177" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Matplotlib" />
+    <SUITE FILE_PATH="coverage/TheBasics$datastructures.coverage" NAME="datastructures Coverage Results" MODIFIED="1655697438605" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AdvancedPython" />
+    <SUITE FILE_PATH="coverage/TheBasics$BarGraph.coverage" NAME="BarGraph Coverage Results" MODIFIED="1653975064309" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Matplotlib" />
+    <SUITE FILE_PATH="coverage/TheBasics$Inheritance.coverage" NAME="Inheritance Coverage Results" MODIFIED="1655695427017" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AdvancedPython/classes" />
+    <SUITE FILE_PATH="coverage/TheBasics$package_tricks.coverage" NAME="package_tricks Coverage Results" MODIFIED="1653325887112" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Pythonic Operations" />
+    <SUITE FILE_PATH="coverage/TheBasics$lambdas_and_maps.coverage" NAME="lambdas_and_maps Coverage Results" MODIFIED="1650837983114" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Pythonic Operations" />
+    <SUITE FILE_PATH="coverage/TheBasics$indexing.coverage" NAME="indexing Coverage Results" MODIFIED="1652515905046" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Numpy" />
+    <SUITE FILE_PATH="coverage/TheBasics$packageimports.coverage" NAME="packageimports Coverage Results" MODIFIED="1655696820361" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AdvancedPython/package imports" />
+    <SUITE FILE_PATH="coverage/TheBasics$making_models.coverage" NAME="making_models Coverage Results" MODIFIED="1653683361189" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PyTorch" />
     <SUITE FILE_PATH="coverage/TheBasics$random_demo__1_.coverage" NAME="random_demo (1) Coverage Results" MODIFIED="1650839863077" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Numpy" />
     <SUITE FILE_PATH="coverage/TheBasics$image_load_save.coverage" NAME="image_load_save Coverage Results" MODIFIED="1651372409243" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/FileInteraction" />
     <SUITE FILE_PATH="coverage/TheBasics$broadcasting.coverage" NAME="broadcasting Coverage Results" MODIFIED="1650839490775" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Numpy" />
-    <SUITE FILE_PATH="coverage/TheBasics$Histogram.coverage" NAME="Histogram Coverage Results" MODIFIED="1651569842177" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Matplotlib" />
+    <SUITE FILE_PATH="coverage/TheBasics$text_load_save.coverage" NAME="text_load_save Coverage Results" MODIFIED="1655696730357" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/FileInteraction" />
     <SUITE FILE_PATH="coverage/TheBasics$gpu_stuff.coverage" NAME="gpu_stuff Coverage Results" MODIFIED="1650861615244" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PyTorch" />
     <SUITE FILE_PATH="coverage/TheBasics$random.coverage" NAME="random Coverage Results" MODIFIED="1650839588951" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Numpy" />
   </component>
