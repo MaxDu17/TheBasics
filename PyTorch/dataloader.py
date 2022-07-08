@@ -3,18 +3,18 @@ import torch
 from torch.utils.data import IterableDataset
 from torch.utils.data import Dataset
 from torch.utils.data import random_split
+import numpy as np
 
 #an iterable-style dataset
 class CustomIterable(IterableDataset):  # object,
     def __init__(self):
         super(CustomIterable).__init__()
-        pass
 
     def __len__(self):
-        pass
+        return 100
 
     def sampling_function(self):
-        return 1
+        return np.random.randint(100)
 
     def __iter__(self):
         while True:
@@ -22,21 +22,21 @@ class CustomIterable(IterableDataset):  # object,
 
 # a map style dataset (both work)
 #the advantagbe is that you can easily split into training and testing sets, and you can also iterate better
-class CustomDataset(Dataset):
+class CustomMapDataset(Dataset):
     def __init__(self):
-        super(CustomDataset).__init__()
-        pass
+        super(CustomMapDataset).__init__()
+        self.elems = np.arange(100)
 
     def __len__(self):
         return 100
 
     def __getitem__(self, idx): #disadvangate: you need to restart when you reach the end
-        return 1
+        return self.elems[idx]
 
 
 
-dataset = CustomIterable()
-dataset2 = CustomDataset()
+iterable_dataset = CustomIterable()
+map_dataset = CustomMapDataset()
 
 #if batch-size is None, then batching is disabled and we return a member of the dataset object directly
 # if collate_fn is none, a default concatenating function is used. If batching is disabled, this function is called on one sample
@@ -47,13 +47,13 @@ dataset2 = CustomDataset()
 #drop_last will remove the last batch if it doesn't have the right number of elements
 #worker_init_fn is an initialization routine for hte workers
 
-sampler = DataLoader(dataset, batch_size=1, shuffle=False, sampler=None,
+iterable_sampler = DataLoader(iterable_dataset, batch_size=1, shuffle=False, sampler=None,
            batch_sampler=None, num_workers=0, collate_fn=None,
            pin_memory=False, drop_last=False, timeout=0,
            worker_init_fn=None, prefetch_factor=2,
            persistent_workers=False)
 
-sampler2 = DataLoader(dataset2, batch_size=1, shuffle=False, sampler=None,
+map_sampler = DataLoader(map_dataset, batch_size=10, shuffle=False, sampler=None,
            batch_sampler=None, num_workers=0, collate_fn=None,
            pin_memory=False, drop_last=False, timeout=0,
            worker_init_fn=None, prefetch_factor=2,
@@ -65,19 +65,19 @@ sampler2 = DataLoader(dataset2, batch_size=1, shuffle=False, sampler=None,
 #### iterating through a dataloader object #####
 
 # infinite loop
-# for batch in sampler:
+# for batch in iterable_sampler:
 #     print("here")
 #     print(batch)
 
 # using the iter() constructor
-sampler_iter = iter(sampler2)
+sampler_iter = iter(map_sampler)
 for i in range(10):
     batch = sampler_iter.next()
-    print(batch)
+    # print(batch)
 
 #### splitting training and testing ####
-a, b = random_split(dataset2, [30, 70]) #30 + 70 = 100, which was the size specified in the dataset object
-sampler3 = DataLoader(a, batch_size=1, shuffle=False, sampler=None,
+train, valid = random_split(map_dataset, [30, 70]) #30 + 70 = 100, which was the size specified in the dataset object
+train_map_sampler = DataLoader(train, batch_size=1, shuffle=False, sampler=None,
            batch_sampler=None, num_workers=0, collate_fn=None,
            pin_memory=False, drop_last=False, timeout=0,
            worker_init_fn=None, prefetch_factor=2,
@@ -93,5 +93,18 @@ sampler3 = DataLoader(a, batch_size=1, shuffle=False, sampler=None,
 # samplers
 # d = torch.utils.data.SequentialSampler(a) #samples from a map-style dataset sequentially
 # d = torch.utils.data.RandomSampler(a, replacement = False, num_samples =None) #samples from a dataset randomly
-# d = torch.utils.data.WeightedRandomSampler(weights, num_samples = 3, replacement = True)
 # d = torch.utils.data.BatchSampler(d, batch_size = 10, drop_last = True) #takes in a sampler and makes it into a batch
+
+
+# EXAMPLE OF A WEIGHTED SAMPLER
+# weights takes in any non-negative value. Zeros are never selected. num_samples is the number of samples you draw. It must be larger than the number of batches you plan to have, or else you raise a StopIteration error
+
+weights = np.zeros(100)
+weights[[1, 2, 3, 45, 78]] = 1 # there are 100 values in the dataset, but here we demonstrate an extreme weighing algorithm, which selects only 1, 2, 3, 45, 78
+d = torch.utils.data.WeightedRandomSampler(weights, num_samples = 100, replacement = True) #and the "d" goes into the "sampler" field of the DataLoader
+map_sampler = DataLoader(map_dataset, batch_size=10, shuffle=False, sampler=d)
+
+s = iter(map_sampler)
+for i in range(10):
+    print(s.next())
+

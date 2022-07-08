@@ -25,15 +25,15 @@ hf.close()
 # reading
 hf = h5py.File('samples/data.h5', 'r')
 print(hf.keys())
-d1 = hf.get("dataset_1")
+d1 = hf["dataset_1"]
 d1 = np.array(d1)
 print(d1.shape)
 
-d2 = hf.get("group1/dataset_2")
+d2 = hf["group1/dataset_2"]
 d2 = np.array(d2)
 print(d2.shape)
 
-d3 = hf.get("group1/subfolder/dataset_3")
+d3 = hf.get("group1/subfolder/dataset_3") #the .get() is more reliable
 d3 = np.array(d3)
 print(d2.shape)
 hf.close()
