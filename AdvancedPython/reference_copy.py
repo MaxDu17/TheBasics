@@ -16,9 +16,14 @@ y = 2
 modify_in_place(y)
 print(y) #does not change!
 
+# but complicated types (rule of thumb: lists, numpy arrays, tensors) are passed by reference
 y = np.array([1, 2, 3])
-modify(y)
-print(y) #shouldn't change
+print(y)
+modify_in_place_list(y)
+print(y) #does change!
+
+y = [1, 2, 3]
+print(y)
 modify_in_place_list(y)
 print(y) #does change!
 
