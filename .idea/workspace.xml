@@ -5,20 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="11a1b250-5c6f-47f9-a10e-0b3a5fee58d4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/AdvancedPython/context_management.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AdvancedPython/list_comprehension.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AdvancedPython/operators.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AdvancedPython/test.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AdvancedPython/threading_demos.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AdvancedPython/type_hinting.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Graphics/tkinter_basics.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/profiling.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AdvancedPython/iterators.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AdvancedPython/variables.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/TheBasics.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/TheBasics.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdvancedPython/DocStrings.py" beforeDir="false" afterPath="$PROJECT_DIR$/AdvancedPython/doc_strings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdvancedPython/Graphics/tkinter_basics.py" beforeDir="false" afterPath="$PROJECT_DIR$/AdvancedPython/advanced_control.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdvancedPython/datastructures.py" beforeDir="false" afterPath="$PROJECT_DIR$/AdvancedPython/datastructures.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,29 +64,7 @@
       <recent name="G:\Desktop\Working Repository\TheBasics\AdvancedPython" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.operators">
-    <configuration name="advanced_control" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="TheBasics" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/AdvancedPython" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/AdvancedPython/advanced_control.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.iterators">
     <configuration name="context_management" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="TheBasics" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -118,7 +87,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="datastructures" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="iterators" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="TheBasics" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -131,7 +100,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/AdvancedPython/datastructures.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/AdvancedPython/iterators.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -184,13 +153,35 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="variables" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="TheBasics" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/AdvancedPython" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/AdvancedPython/variables.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.iterators" />
+        <item itemvalue="Python.variables" />
         <item itemvalue="Python.operators" />
         <item itemvalue="Python.context_management" />
         <item itemvalue="Python.list_comprehension" />
-        <item itemvalue="Python.advanced_control" />
-        <item itemvalue="Python.datastructures" />
       </list>
     </recent_temporary>
   </component>
@@ -257,6 +248,7 @@
     <SUITE FILE_PATH="coverage/TheBasics$matrix_operations.coverage" NAME="matrix_operations Coverage Results" MODIFIED="1650840044742" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Numpy" />
     <SUITE FILE_PATH="coverage/TheBasics$tensors.coverage" NAME="tensors Coverage Results" MODIFIED="1653684469574" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PyTorch" />
     <SUITE FILE_PATH="coverage/TheBasics$strings.coverage" NAME="strings Coverage Results" MODIFIED="1655715175119" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AdvancedPython" />
+    <SUITE FILE_PATH="coverage/TheBasics$variables.coverage" NAME="variables Coverage Results" MODIFIED="1657389961143" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AdvancedPython" />
     <SUITE FILE_PATH="coverage/TheBasics$Histogram.coverage" NAME="Histogram Coverage Results" MODIFIED="1651569842177" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Matplotlib" />
     <SUITE FILE_PATH="coverage/TheBasics$type_hinting.coverage" NAME="type_hinting Coverage Results" MODIFIED="1657388199729" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AdvancedPython" />
     <SUITE FILE_PATH="coverage/TheBasics$reference_copy__1_.coverage" NAME="reference_copy (1) Coverage Results" MODIFIED="1655713088595" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AdvancedPython" />
@@ -269,6 +261,7 @@
     <SUITE FILE_PATH="coverage/TheBasics$lambdas_and_maps.coverage" NAME="lambdas_and_maps Coverage Results" MODIFIED="1650837983114" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Pythonic Operations" />
     <SUITE FILE_PATH="coverage/TheBasics$indexing.coverage" NAME="indexing Coverage Results" MODIFIED="1652515905046" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Numpy" />
     <SUITE FILE_PATH="coverage/TheBasics$packageimports.coverage" NAME="packageimports Coverage Results" MODIFIED="1655696820361" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AdvancedPython/package imports" />
+    <SUITE FILE_PATH="coverage/TheBasics$iterators.coverage" NAME="iterators Coverage Results" MODIFIED="1657390392520" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AdvancedPython" />
     <SUITE FILE_PATH="coverage/TheBasics$argparse.coverage" NAME="argparse Coverage Results" MODIFIED="1655745596073" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AdvancedPython" />
     <SUITE FILE_PATH="coverage/TheBasics$making_models.coverage" NAME="making_models Coverage Results" MODIFIED="1653683361189" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PyTorch" />
     <SUITE FILE_PATH="coverage/TheBasics$profiling.coverage" NAME="profiling Coverage Results" MODIFIED="1657387052105" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
