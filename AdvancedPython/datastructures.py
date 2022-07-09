@@ -1,6 +1,23 @@
 from collections import deque
 import queue
 
+##### COPYING ######
+# remember that all python non-primitives are passed by reference
+x = list()
+y = x
+y.append(1)
+x.append(2)
+# these print the same thing
+print(x)
+print(y)
+
+# to prevent this, just use a copy!
+x = list()
+y = x.copy()
+y.append(1)
+x.append(2)
+print(x)
+print(y)
 ########### QUEUE ##############
 # you can just use .append() and .pop(), but for multithreading, you should use the actual queue module
 structure = queue.Queue()
