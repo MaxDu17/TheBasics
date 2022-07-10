@@ -5,14 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="11a1b250-5c6f-47f9-a10e-0b3a5fee58d4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/scipy/graph_algorithms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scipy/scipy_features.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scipy/spatial_data.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scipy/stats.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scipy/images.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/TheBasics.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/TheBasics.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scipy/thebasics.py" beforeDir="false" afterPath="$PROJECT_DIR$/scipy/optimizers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scipy/optimizers.py" beforeDir="false" afterPath="$PROJECT_DIR$/scipy/optimizers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scipy/scipy_features.py" beforeDir="false" afterPath="$PROJECT_DIR$/scipy/scipy_features.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +66,7 @@
       <recent name="G:\Desktop\Working Repository\TheBasics\AdvancedPython" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.stats">
+  <component name="RunManager" selected="Python.images">
     <configuration name="graph_algorithms" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="TheBasics" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -82,6 +81,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="G:\Desktop\Working Repository\TheBasics\scipy\graph_algorithms.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="images" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="TheBasics" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/scipy" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scipy/images.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -156,35 +177,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="thebasics" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="TheBasics" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/scipy" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scipy/thebasics.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.images" />
         <item itemvalue="Python.stats" />
         <item itemvalue="Python.spatial_data" />
         <item itemvalue="Python.graph_algorithms" />
         <item itemvalue="Python.optimizers" />
-        <item itemvalue="Python.thebasics" />
       </list>
     </recent_temporary>
   </component>
@@ -273,6 +272,7 @@
     <SUITE FILE_PATH="coverage/TheBasics$stats.coverage" NAME="stats Coverage Results" MODIFIED="1657475338631" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scipy" />
     <SUITE FILE_PATH="coverage/TheBasics$by_reference.coverage" NAME="by_reference Coverage Results" MODIFIED="1655712658516" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AdvancedPython" />
     <SUITE FILE_PATH="coverage/TheBasics$dataloader.coverage" NAME="dataloader Coverage Results" MODIFIED="1653853896067" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PyTorch" />
+    <SUITE FILE_PATH="coverage/TheBasics$images.coverage" NAME="images Coverage Results" MODIFIED="1657476065601" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scipy" />
     <SUITE FILE_PATH="coverage/TheBasics$matrix_operations.coverage" NAME="matrix_operations Coverage Results" MODIFIED="1650840044742" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Numpy" />
     <SUITE FILE_PATH="coverage/TheBasics$strings.coverage" NAME="strings Coverage Results" MODIFIED="1655715175119" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AdvancedPython" />
     <SUITE FILE_PATH="coverage/TheBasics$variables.coverage" NAME="variables Coverage Results" MODIFIED="1657389961143" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AdvancedPython" />

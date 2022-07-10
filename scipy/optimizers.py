@@ -1,4 +1,4 @@
-# there is an optimizer that yo ucan use
+## FINDING ROOTS ##
 from scipy.optimize import root
 from math import cos
 def eqn(x):
@@ -8,7 +8,7 @@ myroot = root(eqn, 0)
 print(myroot)
 print(myroot.x)
 
-## you can find extrema too
+## FINDING EXTREMA ###
 from scipy.optimize import minimize
 
 def eqn(x):
