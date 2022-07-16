@@ -13,3 +13,4 @@
 *.pth
 *.pt
 Pytorch/data
+Basic_ML_Models/MNIST
