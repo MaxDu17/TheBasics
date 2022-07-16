@@ -12,4 +12,5 @@ dependencies:
       - sklearn
       - matplotlib
       - opencv-python
+      - line_profiler
 #      - pyaudio
