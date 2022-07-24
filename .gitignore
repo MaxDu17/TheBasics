@@ -3,7 +3,7 @@
 *fls
 *log
 *synctex.gz
-*.run.xml 
+*.run.xml
 *.lol
 *.glsdefs
 *.ilg
@@ -12,5 +12,6 @@
 *.tdo
 *.pth
 *.pt
+.idea/
 Pytorch/data
 Basic_ML_Models/MNIST
