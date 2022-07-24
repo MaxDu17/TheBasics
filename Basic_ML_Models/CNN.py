@@ -10,7 +10,7 @@ def encoder_block(going_in, out):
         nn.LeakyReLU(negative_slope=0.2)
     )
 
-# if you don't have any business in-between encoder  blocks, this is the easiest.
+# if you don't have any business in-between encoder blocks, this is the easiest.
 # (see U-network for an implementation that uses nn.ModuleList)
 encoder = nn.Sequential(
         encoder_block(3, 64),

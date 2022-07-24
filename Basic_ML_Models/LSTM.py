@@ -9,28 +9,32 @@ import torch.optim as optim
 # bidirectional – If True, becomes a bidirectional LSTM. Default: False
 # proj_size – If > 0, will use LSTM with projections of corresponding size. Default: 0
 
-lstm = nn.LSTM(input_size = 3, hidden_size = 3, num_layers = 1, batch_first = True, bidirectional = False)  # Input dim is 3, output dim is 3
+batch_size = 5
+sequence_length = 10
+input_dim = 3
+output_dim = 7
 
-# direct sequential exectuion
-# this is not a special case--we are just using a little "hack" of the network
-inputs = [torch.randn(1, 3) for _ in range(5)]  # make a sequence of length 5, batch 1
-hidden = (torch.zeros(1, 1, 3),
-          torch.zeros(1, 1, 3)) #h_0, c_0
+# the main model
+lstm = nn.LSTM(input_size = input_dim, hidden_size = output_dim, num_layers = 1, batch_first = True, bidirectional = False)
+
+############# DIRECT SEQUENTIAL EXECUTION ##########
+inputs = [torch.randn(batch_size, input_dim) for _ in range(sequence_length)]  # make a sequence of length 10, batch 5
+hidden = (torch.zeros(1, batch_size, output_dim),
+          torch.zeros(1, batch_size, output_dim)) #h_0, c_0
+
 for i in inputs:
-    x = i.view(1, 1, -1) # [batch, length, dim]
+    x = i.view(batch_size, 1, -1) # [batch, length, dim]
     out, hidden = lstm(x, hidden)
     # hidden is (h_k, c_k), which is ready to be passed into the next one
 #out is [batch, 1, out_dim] (because you are executing sequentially!)
 
-######################
-
-inputs = torch.randn(5, 10, 3) # batch 5, length 10, dim 3
+######### BATCHED WHOLE-SEQUENCE EXECUTION #########
+inputs = torch.randn(batch_size, sequence_length, input_dim) # batch 5, length 10, dim 3
 out, hidden = lstm(inputs) # this is how you run it without any hidden initialization
 # see below for how to interpret the out and the hidden variables
 
 # here's how to initialize an LSTM using some hidden representation
-# we must provide an initialization to every input we are feeding in, hence the 5 here
-hidden = (torch.zeros(1, 5, 3), torch.zeros(1, 5, 3))  # initialize to whatever you want
+hidden = (torch.zeros(1, batch_size, output_dim), torch.zeros(1, batch_size, output_dim))  # initialize to whatever you want
 out, hidden = lstm(inputs, hidden)
 
 # the "out" contains all the hidden states (useful for seq-to-seq, for example)
