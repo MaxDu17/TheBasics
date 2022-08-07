@@ -22,17 +22,15 @@ class NeuralNetwork(nn.Module):
         return logits
 
 model = NeuralNetwork()
-
 loss_fn = nn.CrossEntropyLoss() #many more losses available, or you can do your own!
-# optimizer = torch.optim.SGD(model.parameters(), lr = 0.001)
 optimizer = torch.optim.Adam(model.parameters(), lr=2e-4, betas=(0.5,0.999))
 
 #standard training procedure; this is a bogus objective but it shows how it works
 pred = model(input)
 y = torch.ones_like(pred) #just for show
 
-loss = torch.sum(pred) # any scalar function can have a grad operation
-# loss = loss_fn(pred, y)
+# loss = torch.sum(pred) # any scalar function output can work
+loss = loss_fn(pred, y)
 optimizer.zero_grad() #gradients add up, so you must reset
 loss.backward() #backpropagation. Put a vector into the backward() to compute the jacobian product
 optimizer.step() #applies change

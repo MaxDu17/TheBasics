@@ -1,6 +1,6 @@
 # TODO
-* manim basics 
 * pytorch basic models
+* manim basics
 * scipy images
 * web stuff 
 * mujoco 
