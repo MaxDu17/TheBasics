@@ -12,6 +12,7 @@
 *.tdo
 *.pth
 *.pt
+Graphics/Manim/media
 .idea/
 __pycache__/
 Pytorch/data
