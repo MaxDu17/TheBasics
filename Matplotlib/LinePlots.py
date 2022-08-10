@@ -3,7 +3,7 @@ import numpy as np
 """
 This shows you how to plot a simple double line graph and shows off the legend feature 
 """
-
+plt.rcParams["lines.linewidth"] = 3 # good practice to have thick lines 
 # Data for plotting
 t = np.arange(0.0, 2.0, 0.01)
 s = 1 + np.sin(2 * np.pi * t)
@@ -26,7 +26,7 @@ ax.set_xlim(0, 1) #set bounds
 ax.set_ylim(0, 5)
 line.set_color("teal") #example of how you use line
 
-plt.legend([line, line2], ["line", "line 2"])
+plt.legend([line, line2], ["line", "line 2"]) #more on this in a different sectoin
 
 # gridline if needed
 ax.grid()
