@@ -6,7 +6,6 @@ import matplotlib.pyplot as plt
 import sys
 import argparse
 
-
 ######### REQUIRED FILE STRUCTURE ######
 # Assume that all results are found within one outer directory
 # Assume that all seeds are writen under the same prefix, like my_run_seed10, my_run_seed20, etc
@@ -26,21 +25,19 @@ def read_file_group(dir_list, file_name, counter, value):
         try:
             df = pd.read_csv(f"{dir}/{file_name}")
             file_list.append(df[value].to_numpy())
-            index = df[counter] if len(df[counter]) > len(index) else index  # these are the steps
+            index = df[counter] if len(df[counter]) > len(index) else index #these are the steps
             print(f"\tSuccessfully parsed {dir}")
         except Exception as e:
             print(f"\tSkipped {dir} due to {e}")
     return file_list, index
-
 
 # a more aggressive smoothing option
 def running_mean(scalars):
     smoothed = list()
     smoothed.append(scalars[0])
     for i in range(1, len(scalars)):
-        smoothed.append(np.mean(scalars[0: i]))
+        smoothed.append(np.mean(scalars[0 : i]))
     return np.asarray(smoothed)
-
 
 # smoothing
 def smooth(scalars, weight):
@@ -58,8 +55,9 @@ def plot_correction_progress(args):
     color_list = ["blue", "green", "purple", "brown", "orange", "olive"]
     color_index = 0
 
-    plt.style.use("seaborn")
-    plt.grid()
+    if not args.display:
+        plt.style.use("seaborn")
+        plt.grid()
     fig, ax = plt.subplots()
     # modifier is the subdirectory to use under the main directory.
     file_names = os.listdir()
@@ -69,15 +67,14 @@ def plot_correction_progress(args):
     if args.baseline is not None:
         idx = np.arange(args.limit)
         vals = np.ones_like(idx) * args.baseline
-        ax.plot(idx, vals, color="black")
+        ax.plot(idx, vals, color = "black")
         ax.fill_between(idx, vals - args.baseline_margin, vals + args.baseline_margin, alpha=0.1,
-                        facecolor="black",
+                        facecolor = "black",
                         linewidth=0, antialiased=True)
     val_min = 1
-    val_max = 0  # initialize the bounds
+    val_max = 0 #initialize the bounds
     for elem in args.plots:
-        ##### CUSTOMIZE THIS TO THE RELEVANT FILTERS ######
-        relevant_runs = [file for file in file_names if file.startswith(elem) and ".hdf5" not in file]  # sort prefixes
+        relevant_runs = [file for file in file_names if file.startswith(elem) and ".hdf5" not in file] #sort prefixes
         vals, idx = read_file_group(relevant_runs, args.logging_file, args.counter, args.value)
 
         # make a list of means and standard deviations
@@ -90,27 +87,23 @@ def plot_correction_progress(args):
                     step_list.append(trajectory[i])
             mean_list.append(np.mean(step_list))
             stdev_list.append(np.std(step_list) / (1.96 * np.sqrt(len(step_list))))
-        val_min = np.min(smooth(mean_list, smooth_amount)) if np.min(
-            smooth(mean_list, smooth_amount)) < val_min else val_min
-        val_max = np.max(smooth(mean_list, smooth_amount)) if np.max(
-            smooth(mean_list, smooth_amount)) > val_max else val_max
-        ax.plot(idx, smooth(mean_list, smooth_amount), color=color_list[color_index], label=elem)
-        ax.fill_between(idx, smooth([m - s for m, s in zip(mean_list, stdev_list)], smooth_amount),
-                        smooth([m + s for m, s in zip(mean_list, stdev_list)], smooth_amount), alpha=0.1,
-                        facecolor=color_list[color_index],
-                        linewidth=0, antialiased=True)
-        ax.legend()
+        val_min = np.min(smooth(mean_list, smooth_amount)) if np.min(smooth(mean_list, smooth_amount)) < val_min else val_min
+        val_max = np.max(smooth(mean_list, smooth_amount)) if np.max(smooth(mean_list, smooth_amount)) > val_max else val_max
+        ax.plot(idx, smooth(mean_list, smooth_amount), color = color_list[color_index], label = elem)
+        ax.fill_between(idx, smooth([m - s for m, s in zip(mean_list, stdev_list)], smooth_amount),  smooth([m + s for m, s in zip(mean_list, stdev_list)], smooth_amount), alpha=0.1,
+                        facecolor = color_list[color_index],
+                         linewidth=0, antialiased=True)
+        if not args.display:
+            ax.legend()
         color_index += 1
         color_index %= len(color_list)
 
-    ### CUSTOMIZE THIS #####
-    ax.set_ylabel("Suceess Proportion")
-    ax.set_xlabel("Intervention Episodes")
-    ax.set_title("Success vs. Interventions")
-    ###############################
+    if not args.display:
+        ax.set_ylabel("Suceess Proportion")
+        ax.set_xlabel("Intervention Episodes")
+        ax.set_title("Success vs. Interventions")
 
-
-    ax.set_ylim(max(val_min - 0.1, 0), min(val_max + 0.1, 1))
+    ax.set_ylim(max(val_min - 0.05, 0), min(val_max + 0.05, 1))
     ax.set_xlim(args.burn_in, args.limit)
     fig.savefig(args.file_name)
 
@@ -132,12 +125,20 @@ if __name__ == "__main__":
         nargs='+',
         help='the names of your runs (assumed prefixes)',
         required=True)
+    # Use like:
+    # python arg.py -l 1234 2345 3456 4567
 
     parser.add_argument(
         "--baseline",
         type=float,
         default=None,
         help="a horizontal baseline to display",
+    )
+
+    parser.add_argument(
+        "--display",
+        action='store_true',
+        help="if in display mode, do not display legend or titles or use seaborn style, for cleaniness",
     )
 
     parser.add_argument(
@@ -154,7 +155,6 @@ if __name__ == "__main__":
         help="how many points you want to plot",
     )
 
-    # if you have a number of steps you want to exclude from the beginning, use this
     parser.add_argument(
         "--burn_in",
         type=int,
@@ -180,24 +180,22 @@ if __name__ == "__main__":
         "--file_name",
         type=str,
         default='corrections_plot.png',
-        help="the name of the output image file",
+        help="the name of the output file in each directory",
     )
 
-    # this is the title of the CSV column that keeps track of the timestep/index/etc
     parser.add_argument(
         "--counter",
         type=str,
         default="Correction",
-        required=True,
+        required=False,
         help="The value that you use to keep as an index between runs",
     )
 
-    # this is the title of the CSV column that you want to plot
     parser.add_argument(
         "--value",
         type=str,
         default="Success Rate",
-        required=True,
+        required=False,
         help="The value that you're monitoring",
     )
 
