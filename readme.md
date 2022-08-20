@@ -1,5 +1,6 @@
 # TODO
-* matplotlib
+* prebaked plotting software
+* seaborne 
 * web stuff 
   * html basics
   * css basics 
