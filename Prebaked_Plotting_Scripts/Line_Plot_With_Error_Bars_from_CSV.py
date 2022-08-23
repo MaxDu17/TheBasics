@@ -10,6 +10,8 @@ import argparse
 # Assume that all results are found within one outer directory
 # Assume that all seeds are writen under the same prefix, like my_run_seed10, my_run_seed20, etc
 # Assume that these are all folders, and inside the folder there is a file with a consistent name, like data.csv
+
+# for high-visibility analysis purposes, don't use the --display flag. For good visual properties (like for posters and papers), use the display flag
 ##############################
 
 def read_file_group(dir_list, file_name, counter, value):
@@ -51,18 +53,58 @@ def smooth(scalars, weight):
     return np.asarray(smoothed)
 
 
+def display_format(colors, ax, x_label="x", y_label="y", title = "title"):
+    ax.set_facecolor(colors["background"])
+    ax.grid(color=colors["grid"], linewidth=0.7)
+
+    ax.spines["bottom"].set_color(colors["ax"])
+    ax.spines["bottom"].set_linewidth(1)
+    ax.spines["left"].set_color(colors["ax"])
+    ax.spines["left"].set_linewidth(1)
+    ax.spines["right"].set_linewidth(0)
+    ax.spines["top"].set_linewidth(0)
+
+    ax.set_xlabel(x_label, fontdict={"color": colors["text"]}, labelpad=7.0)
+    ax.set_ylabel(y_label, fontdict={"color": colors["text"]}, labelpad=7.0)
+    ax.set_title(title, fontdict={"color": colors["text"]})
+
+    ax.tick_params(axis="x", colors=colors["ax"], labelsize="small")
+    ax.tick_params(axis="y", colors=colors["ax"], labelsize="small")
+
+    [t_label.set_color(colors["text"]) for t_label in ax.xaxis.get_ticklabels()]
+    [t_label.set_color(colors["text"]) for t_label in ax.yaxis.get_ticklabels()]
+
+
 def plot_correction_progress(args):
-    color_list = ["blue", "green", "purple", "brown", "orange", "olive"]
     color_index = 0
+    fig, ax = plt.subplots()
+
+    XLABEL = "Intervention Episodes"
+    YLABEL = "Suceess Proportion"
+    TITLE = "Success vs. Interventions"
 
     if not args.display:
-        plt.style.use("seaborn")
+        color_list = ["blue", "green", "purple", "brown", "orange", "olive"]
         plt.grid()
-    fig, ax = plt.subplots()
+        plt.style.use("seaborn")
+        ax.set_ylabel(YLABEL)
+        ax.set_xlabel(XLABEL)
+        ax.set_title(TITLE)
+    else:
+        color_list = ["#f65a3e", "#3fa290", "#2c2e7c", "6f9821", "#fb8954" "#da258c"]
+        colors = {
+            "background": "#f7fbfb",
+            "grid": "#eef2f3",
+            "ax": "#c8c8d3",
+            "text": "#6e6e80"
+        }
+        plt.style.use("ggplot")
+        display_format(colors, ax, XLABEL, YLABEL, TITLE)
+
+
     # modifier is the subdirectory to use under the main directory.
     file_names = os.listdir()
     smooth_amount = args.smoothing
-    print(smooth_amount)
 
     if args.baseline is not None:
         idx = np.arange(args.limit)
@@ -86,7 +128,7 @@ def plot_correction_progress(args):
                 if i < trajectory.shape[0]:
                     step_list.append(trajectory[i])
             mean_list.append(np.mean(step_list))
-            stdev_list.append(np.std(step_list) / (1.96 * np.sqrt(len(step_list))))
+            stdev_list.append(np.std(step_list) / ( np.sqrt(len(step_list))))
         val_min = np.min(smooth(mean_list, smooth_amount)) if np.min(smooth(mean_list, smooth_amount)) < val_min else val_min
         val_max = np.max(smooth(mean_list, smooth_amount)) if np.max(smooth(mean_list, smooth_amount)) > val_max else val_max
         ax.plot(idx, smooth(mean_list, smooth_amount), color = color_list[color_index], label = elem)
@@ -98,11 +140,7 @@ def plot_correction_progress(args):
         color_index += 1
         color_index %= len(color_list)
 
-    if not args.display:
-        ax.set_ylabel("Suceess Proportion")
-        ax.set_xlabel("Intervention Episodes")
-        ax.set_title("Success vs. Interventions")
-
+    # automatic scaling
     ax.set_ylim(max(val_min - 0.05, 0), min(val_max + 0.05, 1))
     ax.set_xlim(args.burn_in, args.limit)
     fig.savefig(args.file_name)
@@ -115,7 +153,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--base_dir",
         type=str,
-        default="bc_trained_models/can_image_20",
+        default="./",
         required=False,
         help="where all the logs are stored. Use a relative address or an absolute address",
     )
@@ -151,7 +189,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--limit",
         type=int,
-        default=500,
+        default=100,
         help="how many points you want to plot",
     )
 
