@@ -4,7 +4,7 @@ from tbparse import SummaryReader
 import seaborn as sns
 import numpy as np
 
-log_dir = "events.out.tfevents"
+log_dir = "data/events.out.tfevents"
 EVERY_N = 10
 START = 10
 END = 100
@@ -13,7 +13,7 @@ HISTOGRAM_NAME = "Train/Sample_Distribution"
 reader = SummaryReader(log_dir, pivot=True)
 df = reader.histograms
 
-df = df[START:END:EVERY_N] 
+df = df[START:END:EVERY_N]
 plt.figure(figsize=(15, 15)) # width and height in inches
 # Set background
 sns.set_theme(style="white", rc={"axes.facecolor": (0, 0, 0, 0)})
