@@ -16,6 +16,9 @@ class NeuralNetwork(nn.Module):
             nn.Linear(512, 10),
         )
 
+        nn.parameter.Parameter(data = torch.zeros((10, 10)), requires_grad = True) #this is how you keep track of a parameter
+        # torch tensors by default are not kept track of.
+
     def forward(self, x):
         x = self.flatten(x)
         logits = self.linear_relu_stack(x)

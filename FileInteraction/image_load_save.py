@@ -4,7 +4,9 @@ import matplotlib.pyplot as plt
 from PIL import Image
 import imageio
 import numpy as np
-from skimage import io
+# from skimage import io
+from skimage.transform import resize
+
 
 #first, the cv2 method. This is a little archaic
 # img = cv2.imread("samples/sample.png")
@@ -12,8 +14,8 @@ from skimage import io
 # print(img.shape) #length, width, depth
 
 # skimage isa good one for direct numpy conversion
-logo = io.imread('http://scikit-image.org/_static/img/logo.png') # directly to numpy
-io.imagesave("samples/sample.png", logo)
+# logo = io.imread('http://scikit-image.org/_static/img/logo.png') # directly to numpy
+# io.imagesave("samples/sample.png", logo)
 
 #now the matplotlib method
 img = mpimg.imread("samples/sample.png")
@@ -26,6 +28,7 @@ img.save("samples/sample_writtenpillow.png")
 
 # imageio is pretty convenient
 im = imageio.imread("samples/sample.png")
+# im = resize(im, (512, 512))[:, :, :-1] #remove the alpha channel. #if you want to do any resizing
 im = np.array(im) # to turn into numpy array
 plt.imsave("samples/save_writtenimagio.png", im)
 im = imageio.imread("<screen>")
