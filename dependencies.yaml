@@ -5,6 +5,9 @@ channels:
 dependencies:
   - pip
   - pip:
+      - transformers
+      - gym
+      - stable_baselines3
       - imageio
       - pandas
       - tqdm
@@ -13,4 +16,5 @@ dependencies:
       - matplotlib
       - opencv-python
       - line_profiler
+      - ipdb
 #      - pyaudio
