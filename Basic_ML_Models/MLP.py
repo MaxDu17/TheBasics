@@ -14,14 +14,9 @@ mlp = nn.Sequential(
     nn.Linear(hidden_dim, out_dim),
 )
 
-# testing the model
-# x = torch.ones((in_dim,))
-# y = mlp(x)
-
-
-###  FOR A SIMPLE DEMO OF LINEAR REGRESSION ###
-pos_examples = torch.randn((100, 2)) + 3
-neg_examples = torch.randn((100, 2)) - 3
+###  FOR A SIMPLE DEMO OF CLASSIFICATION ###
+pos_examples = torch.randn((100, 2)) + 1
+neg_examples = torch.randn((100, 2)) - 1
 training = torch.cat((pos_examples, neg_examples))
 labels = torch.ones((training.shape[0], 1))
 labels[100 : ] = 0
@@ -31,15 +26,15 @@ fig, ax = plt.subplots()
 pos = pos_examples.numpy()
 x_data_pos = pos[:, 0]
 y_data_pos = pos[:, 1]
-ax.scatter(x_data_pos, y_data_pos, color = "green")
+ax.scatter(x_data_pos, y_data_pos, color = "cyan")
 
 neg = neg_examples.numpy()
 x_data_neg = neg[:, 0]
 y_data_neg = neg[:, 1]
-ax.scatter(x_data_neg, y_data_neg, color = "red")
+ax.scatter(x_data_neg, y_data_neg, color = "pink")
 plt.show()
 
-loss_fn = nn.BCEWithLogitsLoss()  # many more losses available, or you can do your own!
+loss_fn = nn.BCEWithLogitsLoss()
 optimizer = torch.optim.Adam(mlp.parameters(), lr=2e-4, betas=(0.5,0.999))
 
 for i in range(1000):
@@ -58,10 +53,7 @@ y_min, y_max = training[:, 1].min() - 1, training[:, 1].max() + 1
 xx, yy = np.meshgrid(np.arange(x_min, x_max, 0.02),
                      np.arange(y_min, y_max, 0.02))
 
-
 Z = torch.nn.functional.sigmoid(mlp(torch.tensor(np.c_[xx.ravel(), yy.ravel()], dtype = torch.float32))).detach().numpy()
-
-# Put the result into a color plot
 Z = Z.reshape(xx.shape)
 
 fig, ax = plt.subplots()
