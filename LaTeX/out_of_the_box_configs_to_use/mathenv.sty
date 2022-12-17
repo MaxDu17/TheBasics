@@ -1,0 +1,153 @@
+\ProvidesPackage{mathenv}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage[top=1in, bottom=1in, left=1.1in, right=1.2in]{geometry}
+\usepackage{url}
+\usepackage{caption}
+\usepackage{comment}
+\usepackage{amsthm} %theorems and proofs 
+\usepackage{tikz}
+\usepackage{changepage}
+\usepackage{fancyhdr}%Heads
+\usepackage{color} %colors
+\usepackage{overpic}%pictures with text
+\usepackage{mathabx}
+\usepackage{tikz-cd}
+\usepackage{hyperref}
+\usepackage{mathtools}
+
+
+\theoremstyle{plain} %boldface title, italicized body (theorems, lemmas)
+\theoremstyle{remark} %italicized title, roman body
+\newtheorem*{mylemma}{Lemma} %this gives an unnumbered environment 
+\newtheorem*{mylemmaproof}{Proof} %this gives an unnumbered environment 
+\setlength{\parindent}{0cm}
+\setlength{\parskip}{0.3em}
+
+\newenvironment{lemma}{\begin{adjustwidth}{0em}{0em}\begin{mylemma}}{\end{mylemma}\end{adjustwidth}}
+
+\theoremstyle{definition} %boldface title, roman body (definitions, problems, and examples)
+\newtheorem*{myproof}{Proof} %this gives an unnumbered environment
+
+
+\newenvironment{normalproof}{\begin{myproof}}{ \hfill $\blacksquare$ \end{myproof}}
+
+\newenvironment{lemmaproof}{\begin{mylemmaproof}}{ \hfill $\square$ \end{mylemmaproof}}
+
+
+\newcommand{\al}{\alpha}
+\newcommand{\vphi}{\varphi}
+\newcommand{\be}{\beta}
+\newcommand{\ga}{\gamma}
+\newcommand{\de}{\delta}
+\newcommand{\om}{\omega}
+\newcommand{\na}{\nabla}
+\newcommand{\NA}{\nabla}
+\newcommand{\bs}{\boldsymbol}
+
+\newcommand{\ra}{\rightarrow}%arrows
+\newcommand{\lra}{\longrightarrow}
+\newcommand{\Ra}{\Rightarrow}
+\newcommand{\xra}{\xrightarrow}
+\newcommand{\xlra}{\xlongrightarrow}
+\newcommand{\rgl}{\rangle}
+\newcommand{\lgl}{\langle}
+\newcommand{\dash}{\textrm{-}}%en dash
+
+\newcommand{\ot}{\otimes}%tensor product
+
+\newcommand{\bpf}{\begin{proof}}%thm,prop,lem,pf,example,remark
+\newcommand{\epf}{\end{proof}}
+\newcommand{\bthm}{\begin{thm}}
+\newcommand{\ethm}{\end{thm}}
+\newcommand{\bprop}{\begin{prop}}
+\newcommand{\eprop}{\end{prop}}
+\newcommand{\bcor}{\begin{cor}}
+\newcommand{\ecor}{\end{cor}}
+\newcommand{\blem}{\begin{lem}}
+\newcommand{\elem}{\end{lem}}
+\newcommand{\bdefn}{\begin{defn}}
+\newcommand{\edefn}{\end{defn}}
+\newcommand{\bexmp}{\begin{exmp}}
+\newcommand{\eexmp}{\end{exmp}}
+\newcommand{\brem}{\begin{rem}}
+\newcommand{\erem}{\end{rem}}
+
+\newcommand{\bdia}{\begin{displaymath}\xymatrix}
+\newcommand{\edia}{\end{displaymath}}
+\newcommand{\beq}{\begin{equation*}\begin{aligned}}
+\newcommand{\eeq}{\end{aligned}\end{equation*}}
+\newcommand{\bref}{\textbf{Ref}}
+
+\newcommand{\intg}{\mathbb{Z}}%numbers
+\newcommand{\real}{\mathbb{R}}
+\newcommand{\comp}{\mathbb{C}}
+\newcommand{\quot}{\mathbb{H}}
+
+\newcommand{\afv}{\mathbb{A}}
+\newcommand{\prv}{\mathbb{P}}
+
+\newcommand{\mco}{\mathcal{O}}
+\newcommand{\mcc}{\mathcal{C}}
+\newcommand{\mcf}{\mathcal{F}}
+\newcommand{\mcg}{\mathcal{G}}
+\newcommand{\mcs}{\mathcal{S}}
+\newcommand{\cp}{\mathbb{CP}}
+
+\newcommand{\mfo}{\mathfrak{O}}
+\newcommand{\mfg}{\mathfrak{g}}
+
+\newcommand{\msa}{\mathscr{A}}
+\newcommand{\msr}{\mathscr{R}}
+\newcommand{\msg}{\mathscr{G}}
+\newcommand{\msd}{\mathscr{D}}
+
+\newcommand{\itbf}{\item\textbf}%used for item lists
+
+\newcommand{\seqa}{a_1,...,a_}%sequence
+\newcommand{\seqx}{x_1,...,x_}
+\newcommand{\seqy}{y_1,...,y_}
+\newcommand{\seqf}{f_1,...,f_}
+
+\newcommand{\cred}{\textcolor{red}}
+\newcommand{\cblue}{\textcolor{blue}}
+
+\newcommand{\mfa}{\mathfrak{a}}%ideals
+\newcommand{\mfb}{\mathfrak{b}}
+\newcommand{\mfm}{\mathfrak{m}}
+\newcommand{\mfn}{\mathfrak{n}}
+\newcommand{\mfp}{\mathfrak{p}}
+\newcommand{\Af}{A_{(f)}}
+
+
+\newcommand{\txi}{\tilde{\xi}}
+\newcommand{\bxi}{\bar{\xi}}
+\newcommand{\bz}{\bar{z}}
+
+\newcommand{\Ga}{\Gamma}
+\newcommand{\shm}{\underline{\rm SHM}}
+\newcommand{\shi}{\underline{\rm SHI}}
+\newcommand{\shg}{\underline{\rm SHG}}
+\newcommand{\khm}{\underline{\rm KHM}^-}
+\newcommand{\khi}{\underline{\rm KHI}^-}
+\newcommand{\khg}{\underline{\rm KHG}^-}
+
+\makeatletter
+\DeclareFontFamily{U}{tipa}{}
+\DeclareFontShape{U}{tipa}{m}{n}{<->tipa10}{}
+\newcommand{\arc@char}{{\usefont{U}{tipa}{m}{n}\symbol{62}}}%
+
+\newcommand{\arc}[1]{\mathpalette\arc@arc{#1}}
+
+\newcommand{\arc@arc}[2]{%
+  \sbox0{$\m@th#1#2$}%
+  \vbox{
+    \hbox{\resizebox{\wd0}{\height}{\arc@char}}
+    \nointerlineskip
+    \box0
+  }%
+}
+\makeatother
