@@ -36,4 +36,12 @@ print(d2.shape)
 d3 = hf.get("group1/subfolder/dataset_3") #the .get() is more reliable
 d3 = np.array(d3)
 print(d2.shape)
+
+d1 = hf["dataset_1"][()] #gives you a numpy object instead of a dataset object
+
+## special tricks
+# hf = h5py.File('samples/data.h5', 'r+') #this r+ gives you the ability to modify the h5 file on top of reading. DO NOT use "w", as it wipes the dataset
+# hf["dataset_1"][...] = SOMETHING #sets the whole dataset to this new SOMETHING
+
 hf.close()
+
