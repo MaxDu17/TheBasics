@@ -31,7 +31,14 @@ im = imageio.imread("samples/sample.png")
 # im = resize(im, (512, 512))[:, :, :-1] #remove the alpha channel. #if you want to do any resizing
 im = np.array(im) # to turn into numpy array
 plt.imsave("samples/save_writtenimagio.png", im)
-im = imageio.imread("<screen>")
-plt.imsave("samples/imageio_screenshot.png", im)
-im = imageio.imread("<clipboard>")
-plt.imsave("samples/imageio_clipboard.png", im)
+# im = imageio.imread("<screen>")
+# plt.imsave("samples/imageio_screenshot.png", im)
+# im = imageio.imread("<clipboard>")
+# plt.imsave("samples/imageio_clipboard.png", im)
+
+# to resize an image, use cv2
+im = imageio.imread("samples/sample.png")
+# im = resize(im, (512, 512))[:, :, :-1] #remove the alpha channel. #if you want to do any resizing
+im = np.array(im) # to turn into numpy array
+im = cv2.resize(im, (84, 84))
+plt.imsave("samples/downsized_sample.png", im)
