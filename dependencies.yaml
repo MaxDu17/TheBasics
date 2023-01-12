@@ -12,7 +12,7 @@ dependencies:
       - pandas
       - tqdm
       - h5py
-      - sklearn
+      - scikit-learn
       - matplotlib
       - opencv-python
       - line_profiler
