@@ -9,5 +9,3 @@ nn.Sigmoid()
 nn.Tanh()
 nn.ReLU()
 nn.LeakyReLU(negative_slope = 0.01)
-
-

@@ -15,20 +15,20 @@ input_dim = 3
 output_dim = 7
 
 # the main model
-lstm = nn.LSTM(input_size = input_dim, hidden_size = output_dim, num_layers = 1, batch_first = True, bidirectional = False)
+lstm = nn.LSTMCell(input_size = input_dim, hidden_size = output_dim)
 
 ############# DIRECT SEQUENTIAL EXECUTION ##########
 inputs = [torch.randn(batch_size, input_dim) for _ in range(sequence_length)]  # make a sequence of length 10, batch 5
-hidden = (torch.zeros(1, batch_size, output_dim),
-          torch.zeros(1, batch_size, output_dim)) #h_0, c_0
+hidden = (torch.zeros(batch_size, output_dim),
+          torch.zeros(batch_size, output_dim)) #h_0, c_0
 
 for i in inputs:
-    x = i.view(batch_size, 1, -1) # [batch, length, dim]
-    out, hidden = lstm(x, hidden)
-    # hidden is (h_k, c_k), which is ready to be passed into the next one
-#out is [batch, 1, out_dim] (because you are executing sequentially!)
+    hidden = lstm(i, hidden) # simple propagation
+
 
 ######### BATCHED WHOLE-SEQUENCE EXECUTION #########
+lstm = nn.LSTM(input_size = input_dim, hidden_size = output_dim, num_layers = 1, batch_first = True, bidirectional = False)
+
 inputs = torch.randn(batch_size, sequence_length, input_dim) # batch 5, length 10, dim 3
 out, hidden = lstm(inputs) # this is how you run it without any hidden initialization
 # see below for how to interpret the out and the hidden variables
@@ -41,7 +41,3 @@ out, hidden = lstm(inputs, hidden)
 print(out.shape) #[batch, length, out_dim]
 # the "hidden" contains (h_n, c_n) tuple, which is useful for forward / back propagation
 print(hidden[0].shape) # [1, batch, out_dim]
-
-# these two are equal. In general, if you want a temporal representation, this is all you need
-print(out[:, -1, :])
-print(hidden[0])
