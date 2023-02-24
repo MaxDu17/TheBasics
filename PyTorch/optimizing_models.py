@@ -33,13 +33,13 @@ y = torch.ones_like(pred) #just for show
 loss = loss_fn(pred, y)
 # for gradient accumulation, do loss.backward() every time, and then optimizer.step() / optimizer.zero_grad() after a certain namount of time
 
-
+####################### THE PART YOU CARE ABOUT #######################
 optimizer.zero_grad() #gradients add up, so you must reset
 loss.backward() #backpropagation. Put a vector into the backward() to compute the jacobian product
 optimizer.step() #applies change
+################################################################
 
-
-# ignoring part of the computation graph
+#### ignoring part of the computation graph ###
 w = torch.rand(size = (10, 20))
 x = torch.rand(size = (1, 10))
 b = torch.rand(size = (1, 20))

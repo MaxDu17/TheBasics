@@ -53,3 +53,9 @@ w = torch.stack([x, y, z], dim = 0) #stacks (adds another dimension) to 3, 2, 3
 print(w.shape)
 w_list = torch.chunk(w, 3, dim = 0)
 print(w_list[0].shape) # [1, 2, 3] because we split [3, 2, 3] into 3 chunks
+
+### BATCH MATRIX MULTIPLICATION ##
+x = torch.rand(size = (10, 20, 3))
+y = torch.rand(size = (10, 3, 40))
+z = torch.bmm(x, y)
+print(z.shape) #10, 20, 40

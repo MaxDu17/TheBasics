@@ -27,9 +27,13 @@ print(cosine_distance.shape)
 
 
 # loss functions
-
 nn.CrossEntropyLoss() #takes in an B X D unnormalized logits, and a (B) set of labels or a B X D distribution over labels
 nn.BCEWithLogitsLoss() #takes in a B X D unnormalized logits, and B X D set of labels
 nn.BCELoss() # takes in a B x D normalized distribution and a B X D set of labels
 print(nn.functional.one_hot(torch.tensor([2, 3, 1]))) #helpful one-hot label maker
 
+nn.MSELoss() # takes in two matrices of the same shape
+nn.L1Loss()
+nn.CosineSimilarity()
+nn.NLLLoss() # negative log likelihood
+nn.KLDivLoss() # KL divergence
