@@ -1,5 +1,6 @@
 import os
 import shutil
+import glob
 
 # YOU SHOULD ALWAYS LET THIS PROGRAM RUN TO COMPLETION
 
@@ -8,7 +9,21 @@ print(os.getcwd())
 print(os.listdir())
 print(os.path.exists("image_load_save.py")) #checks current directory if this file exists
 
+# single-level listing files (equivalent to os.listdir())
+for name in glob.glob('test_file_tree/*'):
+    print(name)
+
+# recursive file traveling. The "**" means any arbitrary depth
+for name in glob.glob('test_file_tree/**', recursive= True):
+    print(name)
+
+# recursive file traveling with filtering
+for name in glob.glob('test_file_tree/**/*.txt', recursive= True):
+    print(name)
+exit()
+
 os.chdir("test_file_tree") #you can always change your directory
+# it is generally bad practice to change dirs too much, because it gets confusing
 
 os.mkdir("generated_folder") #throws error if already exists
 os.chmod("generated_folder", 0o777) #you can change permissions

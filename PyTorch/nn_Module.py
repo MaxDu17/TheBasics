@@ -16,6 +16,8 @@ class NeuralNetwork(nn.Module):
             nn.Linear(512, 10),
         )
 
+        additional = nn.Parameter(torch.zeros((2, 3))) # you NEED to use a parameter wrapper to register the variable as part of the model
+
         nn.parameter.Parameter(data = torch.zeros((10, 10)), requires_grad = True) #this is how you keep track of a parameter
         # torch tensors by default are not kept track of.
 
