@@ -15,6 +15,8 @@ x = torch.ones(size = (3, 3))
 y = torch.triu(x, diagonal = 0)
 y = torch.tril(x, diagonal = 0)
 y = torch.tril(x, diagonal = 1) #shifting diagonal upper right
+diags = torch.diag(torch.ones(3)) #3x3 diagonal matrix
+covs = torch.diag_embed(torch.ones((2, 3)), offset=0, dim1=-2, dim2=-1) #this gives you a stack of 2 diagonal 3x3 matrices (2 x 3 x 3)
 
 #### ACCESSING PROPERTIES ###
 print(x.shape)

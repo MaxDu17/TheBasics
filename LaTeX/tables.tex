@@ -3,8 +3,28 @@
 \usepackage{multirow} %needed for multiple rows or columns 
 \usepackage{longtable} %for long tables 
 \usepackage[table]{xcolor} %for coloring tables 
+\usepackage{booktabs} % for toprule, bottomrule, midrule 
+
+
+
 \begin{document}
 \listoftables
+
+\section{What you need}
+This is a standard table for use in papers 
+\begin{table}[htb]
+  \centering % \begin{center}
+  \begin{tabular}{c|ccc} 
+    \toprule     
+    &  Class 1 & Class 2  & Class 3 \\ 
+    \midrule
+    Type name &  123 & 456 & 789 \\ 
+    Type name 2 &  123 & 456 & 789 \\ 
+    Type name 3 &  123 & 456 & 789 \\ 
+    \bottomrule
+  \end{tabular}
+\end{table}
+
 \section{simple tables}
 
 %this makes a simple matrix of information 
