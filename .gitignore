@@ -17,3 +17,4 @@ Graphics/Manim/media
 __pycache__/
 Pytorch/data
 Basic_ML_Models/MNIST
+*.secret
