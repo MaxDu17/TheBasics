@@ -45,3 +45,26 @@ anim = FuncAnimation(fig, ud, frames=50, interval=50, blit=True)
 anim.save("test.mp4", dpi=250, bitrate=8192)
 
 plt.show()
+
+### or you can just use a function and global variables
+x_data = [1, 2, 3]
+y_data = [1, 4, 5]
+z_data = [2, 3, 4]
+
+# this rotates the plot 
+fig = plt.figure()
+ax = plt.axes(projection='3d')
+ax.set_axis_off()
+scat = ax.scatter3D(x_data, y_data, z_data, c=y_data, cmap='plasma')
+
+angle = 0
+def update(frame):
+    global angle
+    ax.view_init(20, angle, 0)
+    angle += 3
+    return (scat,)
+import matplotlib.animation as animation
+
+ani = animation.FuncAnimation(fig=fig, func=update, frames=120, interval=30)
+ani.save("test.gif")
+plt.show()
