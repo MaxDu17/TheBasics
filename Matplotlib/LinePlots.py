@@ -26,6 +26,9 @@ ax.set_xlim(0, 1) #set bounds
 ax.set_ylim(0, 5)
 line.set_color("teal") #example of how you use line
 
+# this is how you change the line
+#  line.set_ydata(data)
+
 plt.legend([line, line2], ["line", "line 2"]) #more on this in a different sectoin
 
 # gridline if needed

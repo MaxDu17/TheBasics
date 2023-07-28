@@ -51,7 +51,7 @@ x_data = [1, 2, 3]
 y_data = [1, 4, 5]
 z_data = [2, 3, 4]
 
-# this rotates the plot 
+# this rotates the plot
 fig = plt.figure()
 ax = plt.axes(projection='3d')
 ax.set_axis_off()
