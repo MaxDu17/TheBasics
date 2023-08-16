@@ -31,7 +31,8 @@ y = torch.ones_like(pred) #just for show
 
 # loss = torch.sum(pred) # any scalar function output can work
 loss = loss_fn(pred, y)
-# for gradient accumulation, do loss.backward() every time, and then optimizer.step() / optimizer.zero_grad() after a certain namount of time
+# for gradient accumulation, do loss.backward() every time,
+# and then optimizer.step() / optimizer.zero_grad() after a certain namount of time
 
 ####################### THE PART YOU CARE ABOUT #######################
 optimizer.zero_grad() #gradients add up, so you must reset

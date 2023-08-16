@@ -24,5 +24,5 @@ y[:, take_list] #equivalent to this
 # in this case: grabbing indices that vary in a batch
 take_list = np.array([1,1,2]) # assuming that we have B indices
 expanded_take_list = np.expand_dims(take_list, axis = 1) # we need to cast it into B X 1
-print(np.take_along_axis(y, expanded_take_list, axis = 1)) #in pytorch, equivalent function is torch.gather() 
+print(np.take_along_axis(y, expanded_take_list, axis = 1)) #in pytorch, equivalent function is torch.gather()
 
